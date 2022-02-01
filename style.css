@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  background-color: rgb(160, 149, 143);
+  width: 1920px;
+
+}
+
+main {
+  margin: 0;
+  width: 65%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(253, 242, 235);
+}
+
+/* nav */
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  color: rgb(73, 68, 0);
+  letter-spacing: 3px;
+}
+
+/* top img */
+.title {
+  position: relative;
+  z-index: 1;
+  right: -400px;
+  bottom: -50px;
+  animation: mymove 2s;
+  /* animation-delay: 5s; */
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 3;
+}
+
+
+@keyframes mymove {
+  from {
+    left: 400px;
+  }
+
+  to {
+    left: 900px;
+  }
+}
+
+
+
+/* about */
+/* 左半邊 */
+.aboutTitle {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+
+.euniImg {
+  margin-left: 25%;
+  width:50%;
+}
+
+.aboutImg-2 {
+  position: absolute;
+  left: -100px;
+  top: 50px;
+  width: 30%;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.aboutImg-3 {
+  left: 500px;
+  top: -300px;
+  /* animation: rotation 8s infinite linear; */
+}
+
+/* 右半邊 */
+.introduce {
+  margin-top: 300px;
+}
+
+.textArea {
+  border-radius: 20%;
+  /* height: 500px; */
+  width: 80%;
+  margin-top: -120px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.aboutImg-1 {
+  position: absolute;
+  right: -200px;
+  top: 170px;
+  width: 50%;
+  z-index: 1;
+  animation: rotation 15s infinite linear;
+}
+
+/* protfolio */
+.pfloText {
+  font-family: 'Inter', sans-serif;
+  color: rgb(146, 80, 80);
+  letter-spacing: 5px;
+  background-color: white;
+}
+
+.pfloText:hover {
+  background-color: rgb(214, 204, 55);
+  color:white;
+}
+
+.pfloImg {
+  width: 100%;
+  height: 100%;
+}
+
+
+.imgDark {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 226, 206);
+}
+
+.imgDark:hover {
+  /* 明度降低 */
+  -webkit-filter: brightness(.4);
+
+}
+
+/* protfolio-web */
+.imgTitle {
+  position: absolute;
+  left: 150px;
+  top: 180px;
+  z-index: 1;
+  color: white;
+  line-height: 50px;
+}
+
+
+/* protfolio-ps */
+#psImg-1,
+#psImg-2 {
+  border-radius: 55px;
+  width: 35%;
+  height: 140%;
+  background-color: rgb(214, 231, 255);
+  overflow: hidden;
+}
+
+#psImg-1:hover,
+#psImg-2:hover {
+  transform:scale(1.1);
+}
+
+
+#psImg-2 {
+  margin-top: 100px;
+  background-color: rgb(159, 189, 176);
+  margin-left: -200px;
+}
+
+.ps1text {
+  position: relative;
+  right: 100px;
+  text-align: end;
+}
+
+
+/* 平面設計 */
+.p3Img {
+  /* border:1px solid red; */
+  width: 100%;
+  height: 100%;
+}
+
+.arrow:hover {
+  animation: swing 1s 0;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+
+  40% {
+    transform: translateX(-5px);
+  }
+
+  65% {
+    transform: translateX(2px);
+  }
+
+  85% {
+    transform: translateX(-2px);
+  }
+}
+
+/* top button */
+/* 左右搖擺 */
+@keyframes swing {
+  15%{transform: translateX(5px);}
+  40%{transform: translateX(-5px);}
+  65%{transform: translateX(2px);}
+  85%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);}
+}
+
+#top:hover{
+  animation:swing 1s 1;
+}
+/* footer */
+.contactIfo {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+}
+
+/* logIn */
+.logInText {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 8px;
+  font-weight: bolder;
+
+}
