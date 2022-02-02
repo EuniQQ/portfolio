@@ -73,10 +73,10 @@ class DB{
 
             case "intro";
             $this->title="簡介內容管理";
-            $this->button="新增簡介內容";
+            $this->button="上傳照片";
             $this->header="照片";
             $this->append="自我介紹";
-            $this->upload="照片";
+            $this->upload="更新照片";
             break; 
                                  
                     }
