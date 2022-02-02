@@ -4,7 +4,7 @@ session_start();
 
 //宣告DB
 class DB{
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=web21";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=protfolio";
     protected $user="root";
     protected $pw='';
     protected $pdo;
@@ -26,57 +26,58 @@ class DB{
 //接著進入下面switch case設成對應的文字
     private function setStr($table){
         switch($table){
-            case "title";
-            $this->title="網站標題管理";
-            $this->button="新增網站標題圖片";
-            $this->header="網站標題";
-            $this->append="替代文字";
-            $this->upload="網站標題圖片";
-            break;
-            case "ad";
-            $this->title="動態文字廣告管理";
-            $this->button="新增動態文字廣告";
-            $this->header="動態文字廣告";
-            break;
-            case "mvim";
-            $this->title="動畫圖片管理";
-            $this->button="新增動畫圖片";
-            $this->header="動畫圖片";
-            $this->upload="動畫圖片";
-            break;
-            case "image";
-            $this->title="校園映像資料管理";
-            $this->button="新增校園映像圖片";
-            $this->header="校園映像資料圖片";
-            $this->upload="校園映像圖片";
-            break;
-            case "total";
-            $this->title="進站總人數管理";
-            $this->button="";
-            $this->header="進站總人數:";
-            break;
-            case "bottom";
-            $this->title="頁尾版權資料管理";
-            $this->button="";
-            $this->header="頁尾版權資料";
-            break;
-            case "news";
-            $this->title="最新消息資料管理";
-            $this->button="新增最新消息資料";
-            $this->header="最新消息資料內容";
-            break;
             case "admin";
             $this->title="管理者帳號管理";
             $this->button="新增管理者帳號";
             $this->header="帳號";
             $this->append="密碼";
             break;
-            case "menu";
-            $this->title="選單管理";
-            $this->button="新增主選單";
-            $this->header="主選單名稱";
-            $this->append="選單連結網址";
+
+            case "works";
+            $this->title="網頁設計作品管理";
+            $this->button="新增作品";
+            $this->header="網頁設計作品圖片";
+            $this->append="作品連結網址";
+            $this->upload="作品圖片";
             break;
+
+            case "graphic";
+            $this->title="平面設計作品管理";
+            $this->button="新增縮圖";
+            $this->button2="新增原圖";
+            $this->header="平面設計作品";
+            $this->upload="作品圖片";
+            break;
+            
+            case "bottom";
+            $this->title="頁尾版權及聯繫資料管理";
+            $this->button="新增聯繫資訊";
+            $this->header="頁尾資料";
+            break;
+
+            case "nav";
+            $this->title="導覽列管理";
+            $this->button="新增選項";
+            $this->header="選項名稱";
+            $this->append="連結網址";
+            break;
+
+            case "title";
+            $this->title="首頁圖片管理";
+            $this->button="新增首頁圖片";
+            $this->header="首頁圖片";
+            $this->append="替代文字";
+            $this->upload="首頁圖片";
+            break;
+
+            case "intro";
+            $this->title="簡介內容管理";
+            $this->button="新增簡介內容";
+            $this->header="照片";
+            $this->append="自我介紹";
+            $this->upload="照片";
+            break; 
+                                 
                     }
     }
 
@@ -219,16 +220,16 @@ class DB{
         header("location:".$url);
     }
     
-
-    $Total=new DB('total'); //用大寫表示後面常用到的變數，代表是資料表
-    $Bottom=new DB('bottom');
+//用大寫表示後面常用到的變數，代表是資料表
+    // $Total=new DB('total'); 
+    // $Ad=new DB('ad');
     $Title=new DB('title');
-    $Ad=new DB('ad');
-    $Mvim=new DB('mvim');
+    $Bottom=new DB('bottom');
+    $Graphic=new DB('graphic');
     $Image=new DB('image');
-    $News=new DB('news');
+    $Intro=new DB('intro');
     $Admin=new DB('admin');
-    $Menu=new DB('menu');
+    $Nav=new DB('nav');
 
 
     //$tt=(isset($_GET['do']))?$_GET['do']:''; (另一種寫法)
@@ -236,34 +237,31 @@ class DB{
     $tt=$_GET['do']??''; //先設一個變數，若有do這個參數就使用do，若沒有就空白
 
     switch($tt){
-        
-        case "ad":
-            $DB=$Ad;
-        break;
-        case "mvim":
-            $DB=$Mvim;
-        break;
-        case "image":
-            $DB=$Image;
-        break;
-        case "total":
-            $DB=$Total;
-        break;
-        case "bottom":
-            $DB=$Bottom;
-        break;
-        case "news":
-            $DB=$News;
-        break;
         case "admin":
             $DB=$Admin;
         break;
-        case "menu":
-            $DB=$Menu;
+        case "graphic":
+            $DB=$Graphic;
+        break;
+        case "works":
+            $DB=$Works;
+        break;
+        
+        case "footer":
+            $DB=$Footer;
+        break;
+        case "intro":
+            $DB=$Intro;
+        break;
+        
+        case "nav":
+            $DB=$Nav;
         break;
         default:  //default後面不能接參數
-            $DB=$Title; //除了以上八張資料表，不管是不是title，預設$DB這變數都叫title
+            $DB=$Title;
         break;
+        
+
 
     }
     //試試能不能將資料表撈出來:
@@ -273,15 +271,7 @@ class DB{
     // print_r($Total->all());
 
 
-    //如果SESSION不存在，資料表訪客人數+1
-    if(!isset($_SESSION['total'])){  //沒session時，只要換分頁只要讀到base都會訪客+1
-        $total=$Total->find(1); //把total欄位的數字抓出來+1再存回去
-        $total['total']++;
-        $Total->save($total);
-        $_SESSION['total']=$total['total']; //再建一個session紀錄最新的total值
-    }
-
-
+    
 
 
 
