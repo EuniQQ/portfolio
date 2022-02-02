@@ -21,8 +21,10 @@ class DB{
     public function __construct($table){
         $this->table=$table;   //意思是這個DB(table)就等於傳進來的table
         $this->pdo=new PDO($this->dsn,$this->user,$this->pw);
-        $this->setStr($table);  //在建構資料表時，去執行這個類別裡面setStr()這個function，並把$table帶入
+        $this->setStr($table);  
+        //在建構資料表時，去執行這個類別裡面setStr()這個function，並把$table帶入
          }
+
 //接著進入下面switch case設成對應的文字
     private function setStr($table){
         switch($table){
@@ -36,7 +38,7 @@ class DB{
             case "works";
             $this->title="網頁設計作品管理";
             $this->button="新增作品";
-            $this->header="網頁設計作品圖片";
+            $this->header="作品圖片";
             $this->append="作品連結網址";
             $this->upload="作品圖片";
             break;
@@ -50,7 +52,7 @@ class DB{
             break;
             
             case "bottom";
-            $this->title="頁尾版權及聯繫資料管理";
+            $this->title="頁尾聯繫資訊管理";
             $this->button="新增聯繫資訊";
             $this->header="頁尾資料";
             break;
@@ -226,7 +228,7 @@ class DB{
     $Title=new DB('title');
     $Bottom=new DB('bottom');
     $Graphic=new DB('graphic');
-    $Image=new DB('image');
+    $Works=new DB('works');
     $Intro=new DB('intro');
     $Admin=new DB('admin');
     $Nav=new DB('nav');
@@ -247,8 +249,8 @@ class DB{
             $DB=$Works;
         break;
         
-        case "footer":
-            $DB=$Footer;
+        case "bottom":
+            $DB=$Bottom;
         break;
         case "intro":
             $DB=$Intro;

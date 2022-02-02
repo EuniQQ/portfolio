@@ -1,19 +1,12 @@
-<?php include_once "../base.php";?>
-
-<h3 class='cent'><?=$as['ad'];?></h3>
+<h3>新增動態文字廣告</h3>
 <hr>
-
-<form action="api/add.php" method="post" enctype="multipart/form-data">
-<table style="margin:auto;">
-
-    <tr>
-        <td><?=$hs['ad'];?>：</td>
-        <td><input type="text" name="text"></td>
-    </tr>
-</table>
-<div class="cent">
-    <input type="submit" value="新增">
-    <input type="reset" value="重置">
-    <input type="hidden" name='table' value='ad'>
-</div>
+<form action="api/add.php?do=<?=$_GET['table'];?>" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>動態文字廣告：</td>
+            <td><input type="text" name="text" ></td>
+        </tr>
+    </table>
+   <!-- 打法:div>input:submit + input>reset -->
+   <div><input type="submit" value="新增"><input type="reset" value="重置"></div>
 </form>
