@@ -1,16 +1,16 @@
 
-<h3>新增主選單</h3>
+<h3>新增導覽列選項</h3>
 <hr>
                              
 <form action="api/add.php?do=<?=$_GET['table'];?>" method="post" enctype="multipart/-form-data">    
     <table>
         
         <tr>
-            <td>主選單名稱:</td>
+            <td>選項名稱：</td>
             <td><input type="text" name="name"></td>
         </tr>
         <tr>
-            <td>主選單連結:</td>
+            <td>選項連結：</td>
             <td><input type="text" name="href"></td>
         </tr>
     </table>

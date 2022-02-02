@@ -10,8 +10,8 @@ if(!empty($_FILES['img']['tmp_name'])){
     //$data變數有img，圖片檔名就是上傳的圖片檔名
     $data['img']=$_FILES['img']['name'];
 }else{
-    //排除admin和menu這兩張沒有img欄位的資料表
-    if($DB->table!='admin' && $DB->table!='menu'){
+    //排除admin和nav這兩張沒有img欄位的資料表
+    if($DB->table!='admin' && $DB->table!='nav'){
     //沒有檔案上傳時img欄位寫入空值
         $data['img']='';
     }
@@ -29,7 +29,7 @@ switch($DB->table){
         $data['pw']=$_POST['pw'];
         break;
         
-    case "menu":
+    case "nav":
         $data['name']=$_POST['name'];
         $data['href']=$_POST['href'];
         $data['sh']=1;
@@ -43,9 +43,9 @@ switch($DB->table){
         break;       
 }
 
-//因為有帶do的值過來，所以$DB這個變數一定存在($DB是bake.php的大變數)
+//因為有帶do的值過來，所以$DB這個變數一定存在($DB是bakend.php的大變數)
 $DB->save($data);
-to("../backend.php?do=".$DB->table)
+to("../backend.php?do=".$DB->table);
 
 
 // dd($_POST);
