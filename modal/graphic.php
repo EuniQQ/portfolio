@@ -1,12 +1,18 @@
 
-<h3>新增動畫圖片</h3>
+<h3>新增平面設計作品</h3>
 <hr>
              
 <form action="api/add.php?do=<?=$_GET['table'];?>" method="post" enctype="multipart/form-data">    
                                     
     <table>
         <tr>
-            <td>動畫圖片:</td>
+            <td>新增原圖:</td>
+            <td><input type="file" name="img"></td> 
+            <!-- name欄位跟資料表是一致的 -->
+        </tr>
+
+        <tr>
+            <td>新增縮圖:</td>
             <td><input type="file" name="img"></td> 
             <!-- name欄位跟資料表是一致的 -->
         </tr>
