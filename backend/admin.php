@@ -10,13 +10,12 @@
                     <td width="10%">刪除</td>
                 </tr>
 
-                <?php
-
+<?php
 $rows=$Admin->all();
 foreach ($rows as $key => $value) {
 ?>
-<tr>
 
+<tr>
     <td>
         <input type="text" name='acc[]' value="<?=$value['acc'];?>" style="width:90%">
     </td>
@@ -34,22 +33,25 @@ foreach ($rows as $key => $value) {
 ?>
             </tbody>
         </table>
+        
         <table style="margin-top:40px; width:70%;">
-            <tbody>
-                <tr>
-                    <td width="200px">
-                        <input type="button"
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$do;?>.php&#39;)" 
-                              value="<?=$as[$do];?>">
-                    </td>
-                    <td class="cent">
-                        <input type="submit" value="修改確定">
-                        <input type="reset" value="重置">
-                        <input type="hidden" name="table" value="<?=$do;?>">
-                    </td>
-                </tr>
+     <tbody>
+        <tr>
+            <td width="200px">
+                <input type="button"                                                  
+                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$DB->table;?>.php?table=<?=$DB->table;?>&#39;)"
+                value="<?=$DB->button;?>">
+            </td>
+            <td class="cent">
+              <input type="submit" value="修改確定">
+              <input type="reset" value="重置">
+            </td>
+            <!-- 彈出視窗modal(完整op function寫在js.js)  -->
+            <!-- 在bake.php可找到，預設為display-none，所以看不到 -->
+            </tr>
             </tbody>
-        </table>
+        </table>    
+
 
     </form>
 </div>
