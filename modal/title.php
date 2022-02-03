@@ -1,4 +1,3 @@
-
 <h3>新增首頁圖片</h3>
 <hr>
              
@@ -6,12 +5,12 @@
                                       <!-- 有上傳檔案就需要打enctype="multipart/-form-data -->
     <table>
         <tr>
-            <td>首頁圖片:</td>
-            <td><input type="file" name="img"></td> 
+            <td>首頁圖片：</td>
+            <td><input type="file" name="img"></td>
             <!-- name欄位跟資料表是一致的 -->
         </tr>
         <tr>
-            <td>首頁圖片替代文字:</td>
+            <td>首頁圖片替代文字：</td>
             <td><input type="text" name="text"></td>
         </tr>
     </table>

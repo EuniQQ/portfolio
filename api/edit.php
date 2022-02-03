@@ -1,41 +1,48 @@
-<?php  include_once "../base.php";
-
-$table=$_POST['table'];
-$db=new DB($table);
-//$texts=$_POST['text'];
-$ids=$_POST['id'];
-
-foreach($ids as $key => $id){
-
+<?php
+include_once "../base.php";
+foreach($_POST['id'] as $key => $id){
     if(isset($_POST['del']) && in_array($id,$_POST['del'])){
-        $db->del($id);
+        //刪除
+        $DB->del($id);
+
     }else{
+        //更新
+        $data=$DB->find($id);
 
-        $row=$db->find($id);
-        //$row['text']=$texts[$key];
-
-        switch($table){
-            case 'title';
-                $row['sh']=(isset($_POST['sh']) && $_POST['sh']==$id)?1:0;
-                $row['text']=$_POST['text'][$key];
+        switch($DB->table){
+            case "title":
+                $data['text']=$_POST['text'][$key];
+                $data['sh']=($_POST['sh']==$id)?1:0;
             break;
-            case 'admin':
-                $row['acc']=$_POST['acc'][$key];
-                $row['pw']=$_POST['pw'][$key];
+            case "admin":
+                $data['acc']=$_POST['acc'][$key];
+                $data['pw']=$_POST['pw'][$key];
             break;
-            case "menu":
-                $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
-                $row['text']=$_POST['text'][$key];
-                $row['href']=$_POST['href'][$key];
+            case "nav":
+                $data['name']=$_POST['name'][$key];
+                $data['href']=$_POST['href'][$key];
+                $data['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
+            break;
+            case "bottom":
+                $data['icon']=$_POST['icon'][$key];
+                $data['text']=$_POST['text'][$key];
+                $data['href']=$_POST['href'][$key];
+                $data['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
             break;
             default:
-                $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
-                $row['text']=$_POST['text'][$key];
+            //works,info,graphic
+                $data['text']=isset($_POST['text'])?$_POST['text'][$key]:'';
+                $data['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
+            break;
+
         }
-        //print_r($row);
-        $db->save($row);
+
+        //dd($data);
+        $DB->save($data);
     }
+
 }
 
-to("../backend.php?do=".$table);
+to("../backend.php?do=".$DB->table);
+
 ?>

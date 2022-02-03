@@ -1,11 +1,11 @@
 <div style="width:100%; height:100%; ; overflow:auto; ">
     <p class="t cent"><?=$DB->title;?></p>
     
-    <form method="post" action="api/edit.php">
+    <form method="post" action="api/edit.php?do=<?=$DB->table;?>">
         <table width="100%" class='cent'>
             <tbody>
                 <tr class="yel">
-                    <td width="45%"><?=$DB->header?></td>
+                    <td width="45%"><?=$DB->header;?></td>
                     <td width="23%">替代文字</td>
                     <td width="7%">顯示</td>
                     <td width="7%">刪除</td>
@@ -13,27 +13,30 @@
                 </tr>
             <?php
 
-                $rows=$Title->all();
-                foreach ($rows as $key => $value) {
+                $rows=$DB->all();
+                foreach($rows as $row){
+                    $checked=($row['sh']==1)?'checked':'';
                 ?>
                 <tr>
                     <td width="45%">
-                        <img src="img/<?=$value['img'];?>" style="width:300px;height:30px;">
+                        <img src="./img/<?=$row['img'];?>" style="width:300px;height:30px">
                     </td>
                     <td width="23%">
-                        <input type="text" name='text[]' value="<?=$value['text'];?>">
+                        <input type="text" name="text[]" value="<?=$row['text'];?>">
                     </td>
                     <td width="7%">
-                        <input type="radio" name="sh" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>
+                        <input type="radio" name="sh" value="<?=$row['id'];?>" <?=$checked;?>>
                     </td>
                     <td width="7%">
-                        <input type="checkbox" name="del[]" value="<?=$value['id'];?>">    
+                        <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
+
                     </td>
                     <td>
-                        <input type="button"  value="更新圖片" 
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/title_update.php?id=<?=$value['id'];?>&#39;)">
+                    <input type="hidden" name="id[]" value="<?=$row['id'];?>">
+                    <input type="button"
+                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/upload.php?do=<?=$DB->table;?>&id=<?=$row['id'];?>&#39;)" 
+                              value="更新圖片">
                     </td>
-                    <input type="hidden" name="id[]" value="<?=$value['id'];?>">
                 </tr>
                 <?php
                 }
@@ -45,13 +48,13 @@
                 <tr>
                     <td width="200px">
                         <input type="button"
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$do;?>.php&#39;)" 
-                              value="<?=$DB->button?>">
+                        onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$DB->table;?>.php?table=<?=$DB->table;?>&#39;)"
+                              value="<?=$DB->button;?>">
                     </td>
                     <td class="cent">
                         <input type="submit" value="修改確定">
                         <input type="reset" value="重置">
-                        <input type="hidden" name="table" value="<?=$do;?>">
+                        <!-- <input type="hidden" name="table" value="<?=$do;?>"> -->
                     </td>
                 </tr>
             </tbody>

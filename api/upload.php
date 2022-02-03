@@ -1,13 +1,19 @@
-<?php include_once "../base.php";
+<?php
+include_once "../base.php";
 
-$db=new DB($_POST['table']);
-$row=$db->find($_POST['id']);
+if(!empty($_FILES['img']['tmp_name'])){
+    move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
 
-if(isset($_FILES['img']['tmp_name'])){
-    move_uploaded_file($_FILES['img']['tmp_name'],'../img/'.$_FILES['img']['name']);
-    $row['img']=$_FILES['img']['name'];
-    $db->save($row);
+    //先取出該筆資料
+    $data=$DB->find($_POST['id']);
 
+    //更新img欄位的內容
+    $data['img']=$_FILES['img']['name'];
+
+    //資料寫入資料表
+    $DB->save($data);
 }
 
-to("../backend.php?do=".$_POST['table']);
+to("../backend.php?do=".$DB->table);
+
+?>
