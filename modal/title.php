@@ -1,17 +1,17 @@
 
-<h3>新增標題圖片</h3>
+<h3>新增首頁圖片</h3>
 <hr>
              
 <form action="api/add.php?do=<?=$_GET['table'];?>" method="post" enctype="multipart/form-data">    
                                       <!-- 有上傳檔案就需要打enctype="multipart/-form-data -->
     <table>
         <tr>
-            <td>標題區圖片:</td>
+            <td>首頁圖片:</td>
             <td><input type="file" name="img"></td> 
             <!-- name欄位跟資料表是一致的 -->
         </tr>
         <tr>
-            <td>標題區替代文字:</td>
+            <td>首頁圖片替代文字:</td>
             <td><input type="text" name="text"></td>
         </tr>
     </table>

@@ -59,4 +59,3 @@ foreach ($rows as $key => $value) {
 </div>
 </div>
 
-<br /><b>Notice</b>:  Undefined index: text in <b>C:\110-php\php-homework\protfolio_php\backend\nav.php</b> on line <b>22</b><br />

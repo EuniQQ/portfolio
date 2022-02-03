@@ -53,7 +53,8 @@ class DB{
             case "bottom";
             $this->title="頁尾聯繫資訊管理";
             $this->button="新增聯繫資訊";
-            $this->header="頁尾資料";
+            $this->header="聯繫方式";
+            $this->append="連結";
             break;
 
             case "nav";

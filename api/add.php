@@ -11,7 +11,7 @@ if(!empty($_FILES['img']['tmp_name'])){
     $data['img']=$_FILES['img']['name'];
 }else{
     //排除admin和nav這兩張沒有img欄位的資料表
-    if($DB->table!='admin' && $DB->table!='nav'){
+    if($DB->table!='admin' && $DB->table!='nav' && $DB->table!='bottom'){
     //沒有檔案上傳時img欄位寫入空值
         $data['img']='';
     }
@@ -19,11 +19,16 @@ if(!empty($_FILES['img']['tmp_name'])){
 
 //針對欄位不同的資料表名稱各別處理
 switch($DB->table){
-    case "title":
-        $data['text']=$_POST['text'];  
-        $data['sh']=0;
+    // case "title":
+    //     $data['text']=$_POST['text'];  
+    //     $data['sh']=0;
+    //     break;
+    case "bottom":
+        $data['icon']=$_POST['icon'];
+        $data['text']=$_POST['text'];
+        $data['href']=$_POST['href'];
         break;
-        
+    
     case "admin":
         $data['acc']=$_POST['acc'];
         $data['pw']=$_POST['pw'];
