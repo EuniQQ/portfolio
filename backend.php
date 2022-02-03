@@ -93,7 +93,7 @@
             </div>
             <div style="clear:both;"></div>
             <div
-                style="width:100%; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
+                class="footer">
                 <span class="t" style="line-height:123px;"><?=$Bottom->find(1)['text'];?></span>
             </div>
         </div>

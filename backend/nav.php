@@ -1,5 +1,5 @@
 <div style="width:100%; height:100%; ; overflow:auto; ">
-    <p class="t cent botli"><?=$DB->title;?></p>
+    <p class="t cent"><?=$DB->title;?></p>
     
     <form method="post" action="api/edit.php">
         <table width="100%" class="cent">
