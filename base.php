@@ -39,7 +39,7 @@ class DB{
             $this->title="網頁設計作品管理";
             $this->button="新增作品";
             $this->header="作品圖片";
-            $this->append="作品連結網址";
+            $this->append="連結網址";
             $this->upload="作品圖片";
             break;
 

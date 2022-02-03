@@ -46,7 +46,7 @@
                     <!--主選單放此-->
                     <span class="t botli">後台管理選單</span>
                     <a class="menu-style" href="./backend.php?do=title">
-                        <div class="mainmu">首頁圖片管理 </div>
+                        <div class="mainmu ">首頁圖片管理 </div>
                     </a>
                     <a class="menu-style" href="?do=works">
                         <div class="mainmu">網頁設計作品管理 </div>
@@ -66,24 +66,17 @@
                     <a class="menu-style" href="?do=nav">
                         <div class="mainmu">導覽列管理 </div>
                     </a>
-
-
+                    
+                    <div style="width:100%">
+                        <button onclick="location.replace(&#39;../api/logout.php&#39;)"
+                        style="width:90%; height:85px;display:block;">管理登出</button>
+                    </div>
                 </div>
             </div>
             <div class="di"
                 style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
                 <!--正中央-->
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <td style="width:70%;font-weight:800; border:#333 1px solid; border-radius:3px;"
-                                class="cent"><a href="?do=admin" style="color:#000; text-decoration:none;">後台管理區</a>
-                            </td>
-                            <td><button onclick="location.replace(&#39;../api/logout.php&#39;)"
-                                    style="width:99%; margin-right:2px; height:50px;">管理登出</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                
                 <?php
 
 								$do=(isset($_GET['do']))?$_GET['do']:'title';
@@ -100,7 +93,7 @@
             </div>
             <div style="clear:both;"></div>
             <div
-                style="width:1024px; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
+                style="width:100%; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
                 <span class="t" style="line-height:123px;"><?=$Bottom->find(1)['text'];?></span>
             </div>
         </div>
