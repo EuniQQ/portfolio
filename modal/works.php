@@ -22,7 +22,7 @@
         </tr>
 
         <tr>
-            <td>替代文字：</td>
+            <td>Hover顯示作品文字：</td>
             <td><input type="text" name="text"></td> 
         </tr>
 

@@ -40,14 +40,15 @@ class DB{
             $this->button="新增作品";
             $this->header="作品圖片";
             $this->append="連結網址";
-            $this->upload="作品圖片";
+            $this->upload="更新圖片";
             break;
 
             case "graphic";
             $this->title="平面設計作品管理";
             $this->button="新增作品";
-            $this->header="作品";
-            $this->upload="作品圖片";
+            $this->header="作品縮圖";
+            $this->append="原圖";
+            $this->upload="更新圖片";
             break;
             
             case "bottom";
@@ -69,7 +70,7 @@ class DB{
             $this->button="新增首頁圖片";
             $this->header="首頁圖片";
             $this->append="替代文字";
-            $this->upload="首頁圖片";
+            $this->upload="更新圖片";
             break;
 
             case "intro";

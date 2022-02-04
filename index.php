@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="img/x-icon">
     <title>作品集</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -14,39 +14,8 @@
 </head>
 <body style="background-color: rgb(160, 149, 143);">
   <main class="mx-auto">
-    <div class="container-fruid">
-      <!-- nav -->
-
-      <div class="row" id="top">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:80px;">
-            <img src="./image/logo.png" alt="logo" class="navbar-brand" style="width:5%;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                  <a class="nav-link mx-3" href="#aboutMe">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3" href="#frotfolio">PROTFOLIO</a>
-                </li>
-                <li class="nav-item">
-
-                  <a id="contect" class="nav-link mx-3" href="#contact">CONTACT</a>
-                </li>
-                <li class="nav-item">
-
-                  <a class="nav-link mx-3" href="./login.html">LOG IN</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
+    <!-- nav -->
+    <?php include "./front/nav.php"; ?>
     <!-- nav end -->
 
     <!-- top img -->
@@ -55,10 +24,10 @@
         <div class="col-12" style="position:relative;">
 
 
-          <img src="./image/title-2.png" class="title">
-          <img src="./image/euniQQ.png" ; style="z-index:1;position:absolute;bottom:-200px;right:-40px;width:35%">
+          <img src="./img/title-2.png" class="title">
+          <img src="./img/euniQQ.png" ; style="z-index:1;position:absolute;bottom:-200px;right:-40px;width:35%">
 
-          <img src="./image/bg.svg" style="z-index: 0;width:100%;position:absolute;left:0;">
+          <img src="./img/bg.svg" style="z-index: 0;width:100%;position:absolute;left:0;">
           <div style="z-index:10;">
 
           </div>
@@ -77,9 +46,9 @@
             <h1 class="aboutTitle" style="padding-left:180px;">// ME //</h1> -->
             <h1 class="aboutTitle mt-5 text-center" >ABOUT</h1>
             <h1 class="aboutTitle ml-5 text-center ">// ME //</h1>
-            <img src="./image/eunice.png" class="euniImg mt-5 ">
-            <img src="./image/dec_3.png" class="aboutImg-3">
-            <img src="./image/dec_2.png" class="aboutImg-2">
+            <img src="./img/eunice.png" class="euniImg mt-5 ">
+            <img src="./img/dec_3.png" class="aboutImg-3">
+            <img src="./img/dec_2.png" class="aboutImg-2">
         </div>
 
         <!-- 右半邊 -->
@@ -91,7 +60,7 @@
               <strong
                 style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。
             </h4>
-            <img src="./image/dec_1.png" class="aboutImg-1" style="z-index:1;">
+            <img src="./img/dec_1.png" class="aboutImg-1" style="z-index:1;">
           </div>
         </div>
       </div>
@@ -134,7 +103,7 @@
             <div class="col-md-4 col-sm-6 p-0 ">
               <a href="http://220.128.133.15/s1100421/calendar/index.php?">
                 <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">Calendar <br>萬 年 曆</h2>
-                <img src="./image/calendar.png" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
+                <img src="./img/calendar.png" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
@@ -153,7 +122,7 @@
             <div class="col-md-4 col-sm-6 p-0 ">
               <a href="http://220.128.133.15/s1100421/polling/index.php">
                 <h2 class="imgTitle text-center font-weight-bold d-none">Polling<br>投 票 系 統</h2>
-                <img src="./image/polling.png" class="imgDark ptfloImg">
+                <img src="./img/polling.png" class="imgDark ptfloImg">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
@@ -174,7 +143,7 @@
         <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);">
           <a href="http://220.128.133.15/s1100421/story/index.php?page=1&language=Chinese">
             <h2 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;">Story<br>五 頁 式 展 示 書</h2>
-            <img src="./image/story.png" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
+            <img src="./img/story.png" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
           </a>
         </div>
       </div>
@@ -192,7 +161,7 @@
         <!-- 旅遊DM -->
         <div id="psImg-1" class="col-lg-3 col-md-3 col-sm-3 p-0 ">
           <a href="http://220.128.133.15/s1100421/travel_DM.jpg">
-            <img src="./image/travelDM.png" style="width:100%;">
+            <img src="./img/travelDM.png" style="width:100%;">
             <!-- <h4 class="ps1text mt-2 p-5">TRAVEL <br>DM </h4> -->
             <h4 class="ps1text text-white mt-3">T R A V E L <br> D M </h4>
           </a>
@@ -201,7 +170,7 @@
         <!-- 2022年曆 -->
         <div id="psImg-2" class=" col-lg-3 col-md-3 col-sm-3 p-0">
           <a href="http://220.128.133.15/s1100421/2022_calendar.jpg">
-            <img src="./image/2022calendar.png" style="width:100%;margin-bottom:0px;">
+            <img src="./img/2022calendar.png" style="width:100%;margin-bottom:0px;">
             <h4 class="text-white mt-3 mx-5 ">2 0 2 2 <br> C A L E N D A R</h4>
           </a>
         </div>
@@ -224,94 +193,94 @@
     <div id="page3" class="container-gruid tab-pane fabe">
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/0_lg.jpg"><img src="./image/0.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/0_lg.jpg"><img src="./img/0.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/1_lg.png"><img src="./image/1.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/1_lg.png"><img src="./img/1.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/2_lg.png"><img src="./image/2.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/2_lg.png"><img src="./img/2.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/3_lg.png"><img src="./image/3.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/3_lg.png"><img src="./img/3.png" class="p3Img"></a>
         </div>
 
         <!-- 第二排 -->
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/4(2)_lg.png"><img src="./image/4(2).png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/4(2)_lg.png"><img src="./img/4(2).png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/4_lg.png"><img src="./image/4.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/4_lg.png"><img src="./img/4.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/4-3_lg.png"><img src="./image/4-3.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/4-3_lg.png"><img src="./img/4-3.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/4-4_lg.png"><img src="./image/4-4.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/4-4_lg.png"><img src="./img/4-4.png" class="p3Img"></a>
         </div>
 
         <!-- 第三排 -->
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/5_lg.png"><img src="./image/5.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/5_lg.png"><img src="./img/5.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/6_lg.png"><img src="./image/6.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/6_lg.png"><img src="./img/6.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/7_lg.png"><img src="./image/7.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/7_lg.png"><img src="./img/7.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/8_lg.png"><img src="./image/8.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/8_lg.png"><img src="./img/8.png" class="p3Img"></a>
         </div>
 
         <!-- 第四排 -->
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/9_lg.png"><img src="./image/9.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/9_lg.png"><img src="./img/9.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/10_lg.png"><img src="./image/10.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/10_lg.png"><img src="./img/10.png" class="p3Img"></a>
         </div>
 
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/11_lg.png"><img src="./image/11.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/11_lg.png"><img src="./img/11.png" class="p3Img"></a>
         </div>
 
         <!-- 第五排 -->
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/12_lg.png"><img src="./image/12.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/12_lg.png"><img src="./img/12.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/13_lg.png"><img src="./image/13.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/13_lg.png"><img src="./img/13.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/14_lg.png"><img src="./image/14.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/14_lg.png"><img src="./img/14.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/15_lg.png"><img src="./image/15.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/15_lg.png"><img src="./img/15.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/16_lg.png"><img src="./image/16.png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./img/16_lg.png"><img src="./img/16.png" class="p3Img"></a>
         </div>
 
       </div>
