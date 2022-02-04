@@ -6,16 +6,6 @@
                                     
     <table>
         <tr>
-            <td>類別：</td>
-            <td>
-                <input type="radio" name="pages" id="page1" value="1">
-                <label for="page1">網頁設計</label>
-                <input type="radio" name="pages" id="page2" value="2">
-                <label for="page1">平面設計</label>
-            </td> 
-        </tr>
-
-        <tr>
             <td>網頁設計作品縮圖：</td>
             <td><input type="file" name="img"></td> 
             <!-- name欄位跟資料表是一致的 -->

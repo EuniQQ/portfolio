@@ -50,7 +50,7 @@
                     <a class="menu-style" href="./backend.php?do=title">
                         <div class="mainmu ">首頁圖片管理 </div>
                     </a>
-                    <a class="menu-style" href="?do=works">
+                    <a class="menu-style" href="?do=web">
                         <div class="mainmu">網頁設計作品管理 </div>
                     </a>
                     <a class="menu-style" href="?do=graphic">

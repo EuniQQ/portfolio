@@ -35,7 +35,7 @@ class DB{
             $this->append="密碼";
             break;
 
-            case "works";
+            case "web";
             $this->title="網頁設計作品管理";
             $this->button="新增作品";
             $this->header="作品圖片";
@@ -229,7 +229,7 @@ class DB{
     $Title=new DB('title');
     $Bottom=new DB('bottom');
     $Graphic=new DB('graphic');
-    $Works=new DB('works');
+    $Web=new DB('web');
     $Intro=new DB('intro');
     $Admin=new DB('admin');
     $Nav=new DB('nav');
@@ -246,8 +246,8 @@ class DB{
         case "graphic":
             $DB=$Graphic;
         break;
-        case "works":
-            $DB=$Works;
+        case "web":
+            $DB=$Web;
         break;
         
         case "bottom":

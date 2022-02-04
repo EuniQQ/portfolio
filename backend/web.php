@@ -6,12 +6,12 @@
         <table width="100%" class="cent">
             <tbody>
                 <tr class="yel">
-                    <td width="30%"><?=$DB->header;?></td>
+                    <td width="20%"><?=$DB->header;?></td>
+                    <td width="30%">hover顯示文字</td>
                     <td width="40%"><?=$DB->append;?></td>
-                    <td width="10%">類別</td>
-                    <td width="10%">顯示</td>
-                    <td width="10%">刪除</td>
-                    <td></td>
+                    <td width="5%">顯示</td>
+                    <td width="5%">刪除</td>
+                    <td width="10%">更新</td>
                 </tr>
                 
         <?php
@@ -24,21 +24,17 @@
 
            <tr>
                 <td >
-                  <img src="./img/<?=$row['img'];?>" style="width:100px;height:68px">
+                  <img src="./img/<?=$row['img'];?>" style="width:150px;height:130px">
                 </td>
 
                 <td>
-                   <input type="text" name="hoverText[]" value="<?=$row['hoverText'];?>" <?=$checked;?>>
+                   <input type="text" name="text[]" value="<?=$row['text']; ?>" style="width:70%"<?=$checked;?>>
                 </td>
                
                 <td>
-                   <input type="text" name="href[]" value="<?=$row['href'];?>" <?=$checked;?>>
+                   <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:80%"<?=$checked;?>>
                 </td>
-
-                <td>
-                   <input type="number" name="pages[]" value="<?=$row['pages'];?>" <?=$checked;?>>
-                </td>
-                
+                               
                 <td>
                    <input type="checkbox" name="sh[]" value="<?=$row['sh'];?>">
                 </td>
