@@ -17,7 +17,7 @@
         <?php
            $rows=$DB->all();
            foreach($rows as $row){  
-               $checked=($row['sh']==1)?'checked':'';
+            $checked=($row['sh']==1)?'checked':'';
        ?>
 
            
@@ -28,15 +28,15 @@
                 </td>
 
                 <td>
-                   <input type="text" name="text[]" value="<?=$row['text']; ?>" style="width:70%"<?=$checked;?>>
+                   <input type="text" name="text[]" value="<?=$row['text']; ?>" style="width:70%">
                 </td>
                
                 <td>
-                   <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:80%"<?=$checked;?>>
+                   <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:80%">
                 </td>
                                
                 <td>
-                   <input type="checkbox" name="sh[]" value="<?=$row['sh'];?>">
+                   <input type="checkbox" name="sh[]" value="<?=$row['sh'];?>"<?=$checked;?>>
                 </td>
 
                 <td>

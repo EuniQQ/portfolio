@@ -23,10 +23,10 @@ foreach ($rows as $key => $value) {
         <input type="text" name='icon[]' value="<?=$value['icon'];?>" style="width:90%">
     </td>
     <td>
-        <input type="text" name='text[]' value="<?=$value['text'];?>" style="width:90%">
+        <input type="text" name='text[]' value="<?=$value['text'];?>" style="width:80%">
     </td>
     <td>
-        <input type="text" name="href[]" value="<?=$value['href'];?>" style="width:90%">
+        <input type="text" name="href[]" value="<?=$value['href'];?>" style="width:80%">
     </td>
    
     <td>

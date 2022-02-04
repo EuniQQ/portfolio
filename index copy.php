@@ -77,7 +77,7 @@
       <ul id="frotfolio" class="nav nav-tabs justify-content-around " style='position:relative;z-index:2'>
         <!-- page-1 -->
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#page1">Web Disign</a>
+          <a class="nav-link" data-toggle="tab" href="#page1">Web Disign</a>
           <!-- active是預設顯示頁，tab的a tag要加，下面tab-content的地方也要加 -->
         </li>
 
@@ -88,7 +88,7 @@
 
         <!-- page-3-Graphic Disign -->
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#page3">Graphic Disign</a>
+          <a class="nav-link active" data-toggle="tab" href="#page3">Graphic Disign</a>
         </li>
 
       </ul>
@@ -98,27 +98,25 @@
       <content class="tab-content">
         <!-- frotfolio -->
         <!-- page 1 網頁設計 -->
-        <div id="page1" class="container-fruid tab-pane active"><br>
-        
+        <div id="page1" class="container-fruid tab-pane"><br>
         <?php
-        $webs=$Web->all(['sh'=>1]);
-        // foreach($rows as $key=>$value){
-        ?>
+        $rows=$Web->all(['sh'=>1]);
+        foreach($rows as $key=>$value){
+      ?>
 
           <div class="row">
 
             <!-- 第一層 -->
             <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="<?=$webs['href'][1]?>">
-                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none"><?=$webs['text'][1]?></h2>
-                <img src="./<?=$webs['img'][1]?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
+              <a href="http://220.128.133.15/s1100421/calendar/index.php?">
+                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">Calendar <br>萬 年 曆</h2>
+                <img src="./img/calendar.png" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
               <h2 class="text-center font-weight-bold ">P H P</h3>
             </div>
             <div class="col-md-4 col-sm-0 p-0" style="background-color:rgb(240, 234, 222);">
-
 
             </div>
           </div>
@@ -158,7 +156,6 @@
       </div>
     </div>
 
-    
     <!-- page 1 網頁設計 end-->
 
 
@@ -198,7 +195,7 @@
 
 
     <!-- page 3 -->
-    <div id="page3" class="container-gruid tab-pane fabe">
+    <div id="page3" class="container-gruid tab-pane fabe active">
       <div class="row">
 
       <?php
@@ -274,6 +271,11 @@
           $(this).siblings('.imgTitle').addClass('d-none');
           $(this).siblings('.imgTitle').removeClass('d-1');
         })
+
+
+
+    
+
 
       });
 

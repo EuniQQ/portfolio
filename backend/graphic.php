@@ -19,7 +19,7 @@
         <?php
            $rows=$DB->all();
            foreach($rows as $row){  
-               $checked=($row['sh']==1)?'checked':'';
+            $checked=($row['sh']==1)?'checked':'';
        ?>
 
            
