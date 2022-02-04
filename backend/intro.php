@@ -7,7 +7,7 @@
             <tr class="yel">
                     <td width="30%"><?=$DB->header;?></td>
                     <td width="50%"><?=$DB->append;?></td>
-                    <td width="20%"></td>
+                    <!-- <td width="20%"></td> -->
 
                 </tr>
 

@@ -9,10 +9,10 @@
                     <td width="20%"><?=$DB->header;?></td>
                     <td width="30%"><?=$DB->append?></td>
                     <td width="20%">替代文字</td>
-                    <td width="10%">排序</td>
                     <td width="5%">顯示</td>
                     <td width="5%">刪除</td>
-                    <td width="10%"></td>
+                    <td width="10%">更新</td>
+                    <td width="10%">排序</td>
                 </tr>
 
 
@@ -26,16 +26,13 @@
 
             <tr>
                 <td >
-                   <img src="./img/<?=$row['img'];?>" style="width:120px;height:80px">
+                   <img src="./img/<?=$row['img_sm'];?>" style="width:120px;height:80px">
                 </td>
                 <td >
-                   <img src="./img/<?=$row['img'];?>" style="width:150px;height:120px">
+                   <img src="./img/<?=$row['img'];?>" style="width:180px;height:120px">
                 </td>
                 <td>
                    <input type="text" name="text[]" value="<?=$row['text'];?>">
-                </td>
-                <td>
-                   
                 </td>
                 <td>
                    <input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=$checked;?>>

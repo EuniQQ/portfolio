@@ -45,9 +45,7 @@ class DB{
 
             case "graphic";
             $this->title="平面設計作品管理";
-            $this->button="新增
-            
-            作品";
+            $this->button="新增作品";
             $this->header="作品縮圖";
             $this->append="原圖";
             $this->upload="更新圖片";

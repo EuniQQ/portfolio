@@ -36,6 +36,7 @@
 
     <!-- 頁首 -->
     <div id="main">
+        <img src="./img/logo.png" alt="logo">
     <a title="<?=$Title->find(['sh'=>1])['text'];?>" href="index.php" alt="">
         <div class="ti" style="background:url(&#39;img/<?=$Title->find(['sh'=>1])['img'];?>&#39;); background-size:cover;">
         </div>
@@ -70,7 +71,7 @@
                     
                     <div style="width:100%">
                         <button onclick="location.replace(&#39;../api/logout.php&#39;)"
-                        style="width:90%; height:85px;display:block;">管理登出</button>
+                        style="width:90%; height:85px;display:block;font-size:large;t">管 理 登 出</button>
                     </div>
                 </div>
             </div>

@@ -2,19 +2,6 @@
 
 include_once "../base.php";
 
-switch($DB->table){
-    case "graphic": 
-
-    if(!empty($_FILES['img']['tmp_name'] && $_FILES['img_sm']['tmp_name'])){
-
-    move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
-    $data['img']=$_FILES['img']['name'];
-
-    move_uploaded_file($_FILES['img_sm']['tmp_name'],"../img/".$_FILES['img_sm']['name']);
-    $data['img_sm']=$_FILES['img_sm']['name'];
-}
-    break;
-    default:
 //如果tmp_name(圖片暫存路徑)不是空白(表示上傳成功)
 if(!empty($_FILES['img']['tmp_name'])){
 
@@ -31,7 +18,6 @@ if(!empty($_FILES['img']['tmp_name'])){
     }
 }
 
-}
 //針對欄位不同的資料表名稱各別處理
 switch($DB->table){
     case "title":
