@@ -29,6 +29,9 @@ foreach($_POST['id'] as $key => $id){
                 $data['href']=$_POST['href'][$key];
                 $data['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
             break;
+            case "intro":
+                $data['text']=$_POST['text'][$key];
+                break;
             default:
             //works,info,graphic
                 $data['text']=isset($_POST['text'])?$_POST['text'][$key]:'';

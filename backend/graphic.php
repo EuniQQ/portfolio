@@ -46,7 +46,7 @@
 
                 <td>
                     <input type="hidden" name="id[]" value="<?=$row['id'];?>">
-                        <!-- 更新動畫按鈕 -->
+                        <!-- 更新圖片按鈕 -->
                         <input type="button"
                         onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/upload.php?do=<?=$DB->table;?>&id=<?=$row['id'];?>&#39;)" 
                         value="<?=$DB->upload?>">
