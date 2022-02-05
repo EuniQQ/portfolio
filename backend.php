@@ -34,18 +34,17 @@
         </div>
     </div>
 
-    <!-- 頁首 -->
+        <!-- 頁首 -->
     <div id="main">
         <img src="./img/logo.png" alt="logo">
-    <a title="<?=$Title->find(['sh'=>1])['text'];?>" href="index.php" alt="">
-        <div class="ti" style="background:url(&#39;img/<?=$Title->find(['sh'=>1])['img'];?>&#39;); background-size:cover;">
-        </div>
-    <!--標題-->
-    </a>
+        <a title="<?=$Title->find(['sh'=>1])['text'];?>" href="index.php" alt="">
+            <div class="ti"></div>
+        </a>
+        <!--標題-->
         <div id="ms">
             <div id="lf" style="float:left;">
                 <div id="menuput" class="dbor">
-                    <!--主選單放此-->
+                    <!--主選單-->
                     <span class="t botli">後台管理選單</span>
                     <a class="menu-style" href="./backend.php?do=title">
                         <div class="mainmu ">首頁圖片管理 </div>
@@ -75,6 +74,8 @@
                     </div>
                 </div>
             </div>
+            <!-- 主選單結束 -->
+
             <div class="di"
                 style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
                 <!--正中央-->
