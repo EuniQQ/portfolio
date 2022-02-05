@@ -40,19 +40,15 @@
     <!-- Tabs -->
     <div>
       <ul id="frotfolio" class="nav nav-tabs justify-content-around " style='position:relative;z-index:2'>
-        <!-- page-1 -->
-        <!-- <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#page1">Web Disign</a>
-        </li> -->
-        
-        <!-- page-1-products -->
+                
+        <!-- page-1 DM -->
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#page2">DM Disign</a>
           <!-- active是預設顯示頁，tab的a tag要加，下面tab-content的地方也要加 -->
 
         </li>
 
-        <!-- page-2-Graphic Disign -->
+        <!-- page-2 Graphic Disign -->
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#page3">Graphic Disign</a>
         </li>

@@ -2,18 +2,18 @@
 
           <?php
         $webs=$Web->all(['sh'=>1]);
-        // foreach($rows as $key=>$value){
+       
         ?>
 
           <div class="row">
 
             <!-- 第一層 -->
             <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="<?=$webs['href'][1]?>">
+              <a href="<?=$webs[0]['href']?>">
                 <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">
-                  <?=$webs['text'][1]?>
+                  <?=$webs[0]['text']?>
                 </h2>
-                <img src="./<?=$webs['img'][1]?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
+                <img src="./img/<?=$webs[0]['img']?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
@@ -31,9 +31,9 @@
               <h2 class=" text-left font-weight-bold" style="line-height: 50px;">HTML<br>CSS</h2>
             </div>
             <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="http://220.128.133.15/s1100421/polling/index.php">
-                <h2 class="imgTitle text-center font-weight-bold d-none">Polling<br>投 票 系 統</h2>
-                <img src="./img/polling.png" class="imgDark ptfloImg">
+              <a href="<?=$webs[1]['href']?>">
+                <h2 class="imgTitle text-center font-weight-bold d-none"><?=$webs[1]['text']?></h2>
+                <img src="./img/<?=$webs[1]['img']?>" class="imgDark ptfloImg">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
@@ -52,9 +52,9 @@
         </div>
 
         <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);">
-          <a href="http://220.128.133.15/s1100421/story/index.php?page=1&language=Chinese">
-            <h2 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;">Story<br>五 頁 式 展 示 書</h2>
-            <img src="./img/story.png" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
+          <a href="<?=$webs[2]['href']?>">
+            <h2 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;"><?=$webs[2]['text']?></h2>
+            <img src="./img/<?=$webs[2]['img']?>" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
           </a>
         </div>
       </div>
