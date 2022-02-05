@@ -178,8 +178,11 @@
     <!-- top button end -->
 
 
-    <!-- footer -->
-    <?php include "./front/bottom.php"; ?>
+    <!--頁尾聯絡資訊 bottom -->
+    <footer id="contact" class="row mt-5 pt-5 text-white" style="background-color:rgb(158, 135, 70)">
+      <?=include "./front/bottom.php" ?>
+    </footer>
+    <!-- bottom end -->
 
 
     <!-- 燈箱效果 -->
