@@ -36,9 +36,11 @@
 
         <!-- 頁首 -->
     <div id="main">
-        <img src="./img/logo.png" alt="logo">
-        <a title="<?=$Title->find(['sh'=>1])['text'];?>" href="index.php" alt="">
-            <div class="ti"></div>
+        <a href='index.php' style="position:relative;">
+            <img src="./img/logo_2.png" alt="logo_white" class="backendLogo">
+            <div class="ti" >
+                <h2 class="backendTitle">作品集後台管理系統</h2>
+            </div>
         </a>
         <!--標題-->
         <div id="ms">
