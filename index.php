@@ -2,18 +2,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="#" type="img/x-icon">
-    <title>作品集</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="#" type="img/x-icon">
+  <title>作品集</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./login.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./login.html">
 </head>
+
 <body style="background-color: rgb(160, 149, 143);">
   <main class="mx-auto">
     <!-- nav -->
@@ -23,12 +25,12 @@
     <!-- top img -->
     <div class="container-fruid">
       <div class="row">
-        <div class="col-12" style="position:relative;">       
-          
+        <div class="col-12" style="position:relative;">
+
           <!-- 頁首大標&小臻臻  -->
           <img src="./img/title-2.png" class="title">
           <img src="./img/euniQQ.png" ; style="z-index:1;position:absolute;bottom:-200px;right:-40px;width:35%">
-          
+
           <!-- 頁首底圖 -->
           <img src="./img/<?=$Title->find(['sh'=>1])['img'];?>" style="z-index: 0;width:100%;position:absolute;left:0;">
           <!-- <div style="z-index:10;"></div> -->
@@ -37,29 +39,30 @@
     </div>
     <!-- top img end-->
 
-    <!-- about-->
-    <!-- 左半邊 -->
+    <!-- about 左半邊-->
     <content class="container-fruid" id="aboutMe">
       <div class="row">
-        <!-- <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:150px;position:relative;border:1px solid red"> -->
+       
         <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:150px;">
-            <!-- <h1 class="aboutTitle" style="position:absolute;padding-left:80px;padding-top:50px">ABOUT</h1>
-            <h1 class="aboutTitle" style="padding-left:180px;">// ME //</h1> -->
-            <h1 class="aboutTitle mt-5 text-center" >ABOUT</h1>
-            <h1 class="aboutTitle ml-5 text-center ">// ME //</h1>
-            <img src="./img/eunice.png" class="euniImg mt-5 ">
-            <img src="./img/dec_3.png" class="aboutImg-3">
-            <img src="./img/dec_2.png" class="aboutImg-2">
+
+          <h1 class="aboutTitle mt-5 text-center">ABOUT</h1>
+          <h1 class="aboutTitle ml-5 text-center ">// ME //</h1>
+          
+         
+          <img src="./img/<?=$Intro->find(1)['img'];?>" class="euniImg mt-5 ">
+          <img src="./img/dec_3.png" class="aboutImg-3">
+          <img src="./img/dec_2.png" class="aboutImg-2">
         </div>
 
-        <!-- 右半邊 -->
+        <!-- about 右半邊 -->
         <div class="introduce col-lg-6 col-md-8 col-sm-8 mx-auto" style="position:relative; ">
           <div class="textArea bg-white px-5 mx-auto">
-            <h4 class="py-5   " style="letter-spacing:5px;line-height:40px;z-index:2; ">
-              <strong style="color:teal;font-size:28px">我是筠臻</strong>，求學時於復興美工科、台中科技大學
+            <h4 class="py-5" style="letter-spacing:5px;line-height:40px;z-index:2; ">
+            <?=$Intro->find(1)['text'];?>
+              <!-- <strong style="color:teal;font-size:28px">我是筠臻</strong>，求學時於復興美工科、台中科技大學
               商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
               <strong
-                style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。
+                style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。 -->
             </h4>
             <img src="./img/dec_1.png" class="aboutImg-1" style="z-index:1;">
           </div>
@@ -98,8 +101,8 @@
         <!-- frotfolio -->
         <!-- page 1 網頁設計 -->
         <div id="page1" class="container-fruid tab-pane active"><br>
-        
-        <?php
+
+          <?php
         $webs=$Web->all(['sh'=>1]);
         // foreach($rows as $key=>$value){
         ?>
@@ -109,7 +112,9 @@
             <!-- 第一層 -->
             <div class="col-md-4 col-sm-6 p-0 ">
               <a href="<?=$webs['href'][1]?>">
-                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none"><?=$webs['text'][1]?></h2>
+                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">
+                  <?=$webs['text'][1]?>
+                </h2>
                 <img src="./<?=$webs['img'][1]?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
@@ -157,7 +162,7 @@
       </div>
     </div>
 
-    
+
     <!-- page 1 網頁設計 end-->
 
 
@@ -200,27 +205,27 @@
     <div id="page3" class="container-gruid tab-pane fabe">
       <div class="row">
 
-      <?php
+        <?php
         $imgs=$Graphic->all(['sh'=>1]);
         foreach($imgs as $key=>$img){
       ?>
 
-      <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-        <a data-fancybox="gallery" href="./img/<?=$img['img'] ?>">
-        <img src="./img/<?=$img['img_sm'] ?>" class="p3Img">
-        </a>
-      </div>   
-      
-      <?php
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
+          <a data-fancybox="gallery" href="./img/<?=$img['img'] ?>">
+            <img src="./img/<?=$img['img_sm'] ?>" class="p3Img">
+          </a>
+        </div>
+
+        <?php
          }
       ?>
 
       </div>
     </div>
-  <!-- </div> -->
+    <!-- </div> -->
     <!-- page3 end -->
-    
-    
+
+
     <!-- top button -->
     <div class="container">
       <div class="row">
@@ -234,7 +239,7 @@
 
     <!-- footer -->
     <?php include "./front/bottom.php"; ?>
-    
+
 
     <!-- 燈箱效果 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -287,4 +292,5 @@
     </script>
   </main>
 </body>
+
 </html>
