@@ -46,26 +46,29 @@
                 <div id="menuput" class="dbor">
                     <!--主選單-->
                     <span class="t botli">後台管理選單</span>
+                    <a class="menu-style" href="?do=nav">
+                        <div class="mainmu">導覽列管理 </div>
+                    </a>
                     <a class="menu-style" href="./backend.php?do=title">
                         <div class="mainmu ">首頁圖片管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=web">
-                        <div class="mainmu">網頁設計作品管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=graphic">
-                        <div class="mainmu">平面設計作品管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=bottom">
-                        <div class="mainmu">頁尾版權及聯繫資料管理 </div>
                     </a>
                     <a class="menu-style" href="?do=intro">
                         <div class="mainmu">簡介內容管理 </div>
                     </a>
+                    <a class="menu-style" href="?do=web">
+                        <div class="mainmu">網頁設計作品管理 </div>
+                    </a>
+                    <a class="menu-style" href="?do=dm">
+                        <div class="mainmu">平面設計作品管理 </div>
+                    </a>
+                    <a class="menu-style" href="?do=graphic">
+                        <div class="mainmu">過去設計作品管理 </div>
+                    </a>
+                    <a class="menu-style" href="?do=bottom">
+                        <div class="mainmu">頁尾版權及聯繫資料管理 </div>
+                    </a>
                     <a class="menu-style" href="?do=admin">
                         <div class="mainmu">管理者帳號管理 </div>
-                    </a>
-                    <a class="menu-style" href="?do=nav">
-                        <div class="mainmu">導覽列管理 </div>
                     </a>
                     
                     <div style="width:100%">

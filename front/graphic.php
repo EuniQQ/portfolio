@@ -1,5 +1,5 @@
 <div class="row">
-        <?php
+      <?php
         $imgs=$Graphic->all(['sh'=>1]);
         foreach($imgs as $key=>$img){
       ?>

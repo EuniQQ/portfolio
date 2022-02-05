@@ -2,73 +2,33 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="#" type="img/x-icon">
-    <title>作品集</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="#" type="img/x-icon">
+  <title>作品集</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./login.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./login.html">
 </head>
+
 <body style="background-color: rgb(160, 149, 143);">
   <main class="mx-auto">
-    <!-- nav -->
+    <!--導覽列 nav -->
     <?php include "./front/nav.php"; ?>
     <!-- nav end -->
 
-    <!-- top img -->
-    <div class="container-fruid">
-      <div class="row">
-        <div class="col-12" style="position:relative;">
-
-
-          <img src="./img/title-2.png" class="title">
-          <img src="./img/euniQQ.png" ; style="z-index:1;position:absolute;bottom:-200px;right:-40px;width:35%">
-
-          <img src="./img/bg.svg" style="z-index: 0;width:100%;position:absolute;left:0;">
-          <div style="z-index:10;">
-
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--頁首圖 top img -->
+    <?php include "./front/title.php" ?>
     <!-- top img end-->
 
-    <!-- about-->
-    <!-- 左半邊 -->
-    <content class="container-fruid" id="aboutMe">
-      <div class="row">
-        <!-- <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:150px;position:relative;border:1px solid red"> -->
-        <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:150px;">
-            <!-- <h1 class="aboutTitle" style="position:absolute;padding-left:80px;padding-top:50px">ABOUT</h1>
-            <h1 class="aboutTitle" style="padding-left:180px;">// ME //</h1> -->
-            <h1 class="aboutTitle mt-5 text-center" >ABOUT</h1>
-            <h1 class="aboutTitle ml-5 text-center ">// ME //</h1>
-            <img src="./img/eunice.png" class="euniImg mt-5 ">
-            <img src="./img/dec_3.png" class="aboutImg-3">
-            <img src="./img/dec_2.png" class="aboutImg-2">
-        </div>
 
-        <!-- 右半邊 -->
-        <div class="introduce col-lg-6 col-md-8 col-sm-8 mx-auto" style="position:relative; ">
-          <div class="textArea bg-white px-5 mx-auto">
-            <h4 class="py-5   " style="letter-spacing:5px;line-height:40px;z-index:2; ">
-              <strong style="color:teal;font-size:28px">我是筠臻</strong>，求學時於復興美工科、台中科技大學
-              商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
-              <strong
-                style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。
-            </h4>
-            <img src="./img/dec_1.png" class="aboutImg-1" style="z-index:1;">
-          </div>
-        </div>
-      </div>
-      </div>
-    </content>
-
+    <!--自我介紹 About me -->
+    <?php include "./front/intro.php" ?>
     <!--  about end-->
 
 
@@ -77,18 +37,19 @@
       <ul id="frotfolio" class="nav nav-tabs justify-content-around " style='position:relative;z-index:2'>
         <!-- page-1 -->
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#page1">Web Disign</a>
+          <a class="nav-link active" data-toggle="tab" href="#page1">Web Disign</a>
           <!-- active是預設顯示頁，tab的a tag要加，下面tab-content的地方也要加 -->
         </li>
 
         <!-- page-2-products -->
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#page2">DM Disign</a>
+          
         </li>
 
         <!-- page-3-Graphic Disign -->
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#page3">Graphic Disign</a>
+          <a class="nav-link" data-toggle="tab" href="#page3">Graphic Disign</a>
         </li>
 
       </ul>
@@ -98,25 +59,29 @@
       <content class="tab-content">
         <!-- frotfolio -->
         <!-- page 1 網頁設計 -->
-        <div id="page1" class="container-fruid tab-pane"><br>
-        <?php
-        $rows=$Web->all(['sh'=>1]);
-        foreach($rows as $key=>$value){
-      ?>
+        <div id="page1" class="container-fruid tab-pane active"><br>
+
+          <?php
+        $webs=$Web->all(['sh'=>1]);
+        // foreach($rows as $key=>$value){
+        ?>
 
           <div class="row">
 
             <!-- 第一層 -->
             <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="http://220.128.133.15/s1100421/calendar/index.php?">
-                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">Calendar <br>萬 年 曆</h2>
-                <img src="./img/calendar.png" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
+              <a href="<?=$webs['href'][1]?>">
+                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">
+                  <?=$webs['text'][1]?>
+                </h2>
+                <img src="./<?=$webs['img'][1]?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
               <h2 class="text-center font-weight-bold ">P H P</h3>
             </div>
             <div class="col-md-4 col-sm-0 p-0" style="background-color:rgb(240, 234, 222);">
+
 
             </div>
           </div>
@@ -156,6 +121,7 @@
       </div>
     </div>
 
+
     <!-- page 1 網頁設計 end-->
 
 
@@ -194,31 +160,14 @@
     <!-- page 2 end -->
 
 
-    <!-- page 3 -->
-    <div id="page3" class="container-gruid tab-pane fabe active">
-      <div class="row">
-
-      <?php
-        $imgs=$Graphic->all(['sh'=>1]);
-        foreach($imgs as $key=>$img){
-      ?>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-        <a data-fancybox="gallery" href="./img/<?=$img['img'] ?>">
-        <img src="./img/<?=$img['img_sm'] ?>" class="p3Img">
-        </a>
-      </div>   
-      
-      <?php
-         }
-      ?>
-
-      </div>
+    <!-- 以前作品 page 3 -->
+    <div id="page3" class="container-gruid tab-pane fabe">
+      <?= include "./front/graphic.php" ?>
     </div>
-  <!-- </div> -->
+    <!-- </div> -->
     <!-- page3 end -->
-    
-    
+
+
     <!-- top button -->
     <div class="container">
       <div class="row">
@@ -230,9 +179,12 @@
     <!-- top button end -->
 
 
-    <!-- footer -->
-    <?php include "./front/bottom.php"; ?>
-    
+    <!--頁尾聯絡資訊 bottom -->
+    <footer id="contact" class="row mt-5 pt-5 text-white" style="background-color:rgb(158, 135, 70)">
+      <?=include "./front/bottom.php" ?>
+    </footer>
+    <!-- bottom end -->
+
 
     <!-- 燈箱效果 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -272,11 +224,6 @@
           $(this).siblings('.imgTitle').removeClass('d-1');
         })
 
-
-
-    
-
-
       });
 
 
@@ -290,4 +237,5 @@
     </script>
   </main>
 </body>
+
 </html>

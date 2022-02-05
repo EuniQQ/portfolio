@@ -61,6 +61,12 @@ switch($DB->table){
         $data['href']=$_POST['href'];
         $data['sh']=1;
         break;
+
+    case "dm":
+        $data['text']=$_POST['text'];
+        $data['href']=$_POST['href'];
+        $data['sh']=1;
+        break;
             
     default: //欄位格式相同的資料表統一在default區段處理
         $data['text']=$_POST['text']??'';

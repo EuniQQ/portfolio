@@ -18,35 +18,41 @@
 
 <body style="background-color: rgb(160, 149, 143);">
   <main class="mx-auto">
-    <!--導覽列 nav -->
-    <?php include "./front/nav.php"; ?>
-    <!-- nav end -->
+        <!--導覽列 nav -->
+        <?php include "./front/nav.php"; ?>
+        <!-- nav end -->
 
-    <!--頁首圖 top img -->
-    <?php include "./front/title.php" ?>
-    <!-- top img end-->
+        <!--頁首圖 top img -->
+        <?php include "./front/title.php" ?>
+        <!-- top img end-->
 
 
-    <!--自我介紹 About me -->
-    <?php include "./front/intro.php" ?>
-    <!--  about end-->
+        <!--自我介紹 About me -->
+        <?php include "./front/intro.php" ?>
+        <!--  about end-->
 
+     
+        <!-- frotfolio -->
+        <!-- 網頁設計 -->
+        <?php include "./front/web.php" ?>
+        <!-- page 1 網頁設計 end-->
 
     <!-- Tabs -->
     <div>
       <ul id="frotfolio" class="nav nav-tabs justify-content-around " style='position:relative;z-index:2'>
         <!-- page-1 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#page1">Web Disign</a>
-          <!-- active是預設顯示頁，tab的a tag要加，下面tab-content的地方也要加 -->
-        </li>
-
-        <!-- page-2-products -->
+        </li> -->
+        
+        <!-- page-1-products -->
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#page2">DM Disign</a>
+          <a class="nav-link active" data-toggle="tab" href="#page2">DM Disign</a>
+          <!-- active是預設顯示頁，tab的a tag要加，下面tab-content的地方也要加 -->
+
         </li>
 
-        <!-- page-3-Graphic Disign -->
+        <!-- page-2-Graphic Disign -->
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#page3">Graphic Disign</a>
         </li>
@@ -54,98 +60,13 @@
       </ul>
       <!-- Tabs end -->
 
+    <content class="tab-content">
+      
+      <!--page 1 影像課DM -->
+      <div id="page2" class="container-fruid tab-pane fabe py-5 active" style="background-color: rgb(252, 251, 251);"><br>
+        <div class="row" style="justify-content:space-evenly;">
 
-      <content class="tab-content">
-        <!-- frotfolio -->
-        <!-- page 1 網頁設計 -->
-        <div id="page1" class="container-fruid tab-pane active"><br>
-
-          <?php
-        $webs=$Web->all(['sh'=>1]);
-        // foreach($rows as $key=>$value){
-        ?>
-
-          <div class="row">
-
-            <!-- 第一層 -->
-            <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="<?=$webs['href'][1]?>">
-                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">
-                  <?=$webs['text'][1]?>
-                </h2>
-                <img src="./<?=$webs['img'][1]?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
-              </a>
-            </div>
-            <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-              <h2 class="text-center font-weight-bold ">P H P</h3>
-            </div>
-            <div class="col-md-4 col-sm-0 p-0" style="background-color:rgb(240, 234, 222);">
-
-
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- 第二層 -->
-            <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-              <h2 class=" text-left font-weight-bold" style="line-height: 50px;">HTML<br>CSS</h2>
-            </div>
-            <div class="col-md-4 col-sm-6 p-0 ">
-              <a href="http://220.128.133.15/s1100421/polling/index.php">
-                <h2 class="imgTitle text-center font-weight-bold d-none">Polling<br>投 票 系 統</h2>
-                <img src="./img/polling.png" class="imgDark ptfloImg">
-              </a>
-            </div>
-            <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-              <h2 class=" text-right font-weight-bold" style="line-height: 50px;">JAVASCRIPT<br>JQUERY
-              </h2>
-            </div>
-          </div>
-      </content>
-
-      <div class="row  ">
-        <!-- 第三層 -->
-        <div class="col-md-4 col-sm-12 p-0" style="background-color:#e1e2b5;"></div>
-
-        <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-          <h2 class="text-center font-weight-bold ">BOOSTRAP</h2>
-        </div>
-
-        <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);">
-          <a href="http://220.128.133.15/s1100421/story/index.php?page=1&language=Chinese">
-            <h2 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;">Story<br>五 頁 式 展 示 書</h2>
-            <img src="./img/story.png" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- page 1 網頁設計 end-->
-
-
-
-
-    <!--page 2 影像課DM -->
-    <div id="page2" class="container-fruid tab-pane fabe py-5" style="background-color: rgb(252, 251, 251);"><br>
-      <div class="row" style="justify-content:space-evenly;">
-
-        <!-- 旅遊DM -->
-        <div id="psImg-1" class="col-lg-3 col-md-3 col-sm-3 p-0 ">
-          <a href="http://220.128.133.15/s1100421/travel_DM.jpg">
-            <img src="./img/travelDM.png" style="width:100%;">
-            <!-- <h4 class="ps1text mt-2 p-5">TRAVEL <br>DM </h4> -->
-            <h4 class="ps1text text-white mt-3">T R A V E L <br> D M </h4>
-          </a>
-        </div>
-
-        <!-- 2022年曆 -->
-        <div id="psImg-2" class=" col-lg-3 col-md-3 col-sm-3 p-0">
-          <a href="http://220.128.133.15/s1100421/2022_calendar.jpg">
-            <img src="./img/2022calendar.png" style="width:100%;margin-bottom:0px;">
-            <h4 class="text-white mt-3 mx-5 ">2 0 2 2 <br> C A L E N D A R</h4>
-          </a>
-        </div>
+        <?=include "front/dm.php"?>
 
         <!-- p2文字說明 -->
         <div id="psImg-3" class="col-lg-3 col-md-4 col-sm-8">
@@ -153,7 +74,6 @@
           <h4 style="letter-spacing: 8px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
             ，也得以在ADOBE軟體的應用上學習精進<br><i class="fas fa-palette fa-3x float-right"></i></h4>
         </div>
-
       </div>
     </div>
     <!-- page 2 end -->
@@ -166,7 +86,7 @@
     <!-- </div> -->
     <!-- page3 end -->
 
-
+    </content>
     <!-- top button -->
     <div class="container">
       <div class="row">

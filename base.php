@@ -43,8 +43,16 @@ class DB{
             $this->upload="更新圖片";
             break;
 
-            case "graphic";
+            case "dm";
             $this->title="平面設計作品管理";
+            $this->button="新增作品";
+            $this->header="作品圖片";
+            $this->append="連結網址";
+            $this->upload="更新圖片";
+            break;
+
+            case "graphic";
+            $this->title="過去設計作品管理";
             $this->button="新增作品";
             $this->header="作品縮圖";
             $this->append="原圖";
@@ -230,6 +238,7 @@ class DB{
     $Bottom=new DB('bottom');
     $Graphic=new DB('graphic');
     $Web=new DB('web');
+    $Dm=new DB('dm');
     $Intro=new DB('intro');
     $Admin=new DB('admin');
     $Nav=new DB('nav');
@@ -249,7 +258,9 @@ class DB{
         case "web":
             $DB=$Web;
         break;
-        
+        case "dm":
+            $DB=$Dm;
+        break;
         case "bottom":
             $DB=$Bottom;
         break;
