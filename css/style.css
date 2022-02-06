@@ -242,8 +242,26 @@ main {
   padding: 30px 0 0 100px;
 }
 
+.backendTitle:hover{
+  text-decoration-line:none;
+}
+
 .backendLogo{
   z-index:1;
   position:absolute;
   padding-top: 20px;
+}
+
+.colorBtn{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  display: inline-block;
+  margin:5px;
+}
+
+.footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
