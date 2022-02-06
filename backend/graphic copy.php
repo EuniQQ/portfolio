@@ -17,34 +17,14 @@
 
 
         <?php
-        //    $rows=$DB->all();
-        //    foreach($rows as $row){  
-        //     $checked=($row['sh']==1)?'checked':'';
-            
-            $rows=$DB->all(" ORDER by `rank`");
-            // dd($rows);
-            foreach($rows as $key => $row){
-                $checked=($row['sh']==1)?"checked":"";
-                //第一張 
-                if($key==0){
-                    $up=$row['id'] . "-" . $row['id'];
-                    $down=$row['id'] . "-" . $rows[$key+1]['id'];
-                }
-                //最後一張
-                if($key==(count($rows)-1)){
-                    $down=$row['id'] . "-" . $row['id'];
-                    $up=$row['id'] . "-" . $rows[$key-1]['id'];
-                }
-                //中間
-                if($key>0 && $key<(count($rows)-1)){
-                    $up=$row['id'] . "-" . $rows[$key-1]['id'];
-                    $down=$row['id'] . "-" . $rows[$key+1]['id'];
-                }
-
-        ?>
+           $rows=$DB->all();
+           foreach($rows as $row){  
+            $checked=($row['sh']==1)?'checked':'';
+       ?>
 
 
            
+
             <tr>
                 <td >
                    <img src="./img/<?=$row['img_sm'];?>" style="width:120px;height:80px">
@@ -98,13 +78,3 @@
 
    </form>
 </div>
-
-<script>
-    $('.sw').on('click',function(){
-        let id=$(this).data("sw").split("-");
-        $.post("api/sw.php",{id,table:"graphic"},()=>{
-            location.reload();
-        })
-    })
-
-</script>

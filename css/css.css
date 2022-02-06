@@ -83,7 +83,7 @@ body
 .mainmu:hover
 {
 	/* background:url(../icon/menu2.fw.png) center no-repeat;  */
-	background-size:cover;
+	/* background-size:cover; */
 	background-color: rgb(228, 230, 230);
 	
 }
@@ -169,6 +169,6 @@ input[type=text],input[type=password]
 	position:relative; 
 	background:rgb(200, 211, 214); 
 	margin-top:4px; 
-	height:123px; 
+	height:90px; 
 	display:block;
 }

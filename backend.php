@@ -1,4 +1,11 @@
-﻿<?php include "base.php";?>
+﻿<!-- <?php
+include_once "base.php";
+
+if(!isset($_SESSION['login'])){
+    to('index.php');  
+    //如果沒有登入就導回首頁，不能去後台
+}
+?> -->
 
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -10,6 +17,9 @@
 
     <title>後台管理系統</title>
     <link href="./css/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/js.js"></script>
 	<style>
@@ -21,6 +31,10 @@
         }
         a:hover{
             text-decoration:underline;
+        }
+
+        body{
+            background-color:white;
         }
 	</style>
 </head>
@@ -39,7 +53,7 @@
         <a href='index.php' style="position:relative;">
             <img src="./img/logo_2.png" alt="logo_white" class="backendLogo">
             <div class="ti" >
-                <h2 class="backendTitle">作品集後台管理系統</h2>
+                <h2 class="backendTitle">作品集管理系統</h2>
             </div>
         </a>
         <!--標題-->
@@ -75,15 +89,15 @@
                     
                     <div style="width:100%">
                         <button onclick="location.replace(&#39;../api/logout.php&#39;)"
-                        style="width:90%; height:85px;display:block;font-size:large;t">管 理 登 出</button>
+                        style="width:90%; height:85px;display:block;font-size:large;">管 理 登 出</button>
                     </div>
                 </div>
             </div>
             <!-- 主選單結束 -->
 
+            <!--正中央-->
             <div class="di"
-                style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
-                <!--正中央-->
+                style="height:610px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
                 
                 <?php
 
@@ -102,10 +116,14 @@
             <div style="clear:both;"></div>
             <div
                 class="footer">
-                <span class="t" style="line-height:123px;"><?=$Bottom->find(1)['text'];?></span>
+                <span class=" text-center t" style="line-height:80px;">&copy; copyright by Eunice Chang</span>
+                
             </div>
         </div>
 
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

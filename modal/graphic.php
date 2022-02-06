@@ -2,7 +2,7 @@
 <h3>新增平面設計作品</h3>
 <hr>
              
-<form action="api/add.php?do=<?=$_GET['table'];?>" method="post" enctype="multipart/form-data">    
+<form action="api/add_graphic.php" method="post" enctype="multipart/form-data">    
                                     
     <table>
         

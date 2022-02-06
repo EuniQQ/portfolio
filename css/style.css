@@ -235,7 +235,7 @@ main {
 }
 
 /* 後台 */
-.backendTtile{
+.backendTitle{
   letter-spacing:8px;
   font-family: 'Inter', sans-serif;
   color:white;
