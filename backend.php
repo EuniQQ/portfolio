@@ -1,11 +1,11 @@
 ﻿<!-- <?php
 include_once "base.php";
 
-if(!isset($_SESSION['login'])){
-    to('index.php');  
-    //如果沒有登入就導回首頁，不能去後台
-}
-?> -->
+// if(!isset($_SESSION['login'])){
+//     to('index.php');  
+//     //如果沒有登入就導回首頁，不能去後台
+// }
+// ?> 
 
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -43,7 +43,7 @@ if(!isset($_SESSION['login'])){
     <div id="cover" style="display:none; ">
         <div id="coverr">
             <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"
-                onclick="cl(&#39;#cover&#39;)">X</a>
+                onclick="cl(`#cover`)">X</a>
             <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
         </div>
     </div>
@@ -88,7 +88,7 @@ if(!isset($_SESSION['login'])){
                     </a>
                     
                     <div style="width:100%">
-                        <button onclick="location.replace(&#39;../api/logout.php&#39;)"
+                        <button onclick="location.replace(`../api/logout.php`)"
                         style="width:90%; height:85px;display:block;font-size:large;">管 理 登 出</button>
                     </div>
                 </div>
@@ -134,9 +134,8 @@ if(!isset($_SESSION['login'])){
                     $('.dbor').css('background-color','	#FFFAFA'); //選單列
                     });
 
-                // $('.blue').click(function(){
-                //     $('.ti').css('background-color','rgb(74, 126, 161)');  
-           }
+                
+           });   
        </script>
 </body>
 

@@ -1,14 +1,10 @@
-<!-- <?php
-if(!empty($_POST)){
-    if($_POST['acc']=='admin' && $_POST['pw']=='1234'){
-        to("backend.php");
-    }else{
-        echo "<script>";
-        echo "alert('帳號或密碼錯誤')";
-        echo "</script>";
+<?php
+
+if(isset($_SESSION['login'])){
+    to("backend.php");
     }
-}
-?> -->
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +26,7 @@ if(!empty($_POST)){
             box-shadow: 0 0 0 20px white;
             opacity:0.5;
 
-           
+
         }
 
         .container:hover{
@@ -52,12 +48,12 @@ if(!empty($_POST)){
                 <h1 class="mt-3 mb-5">HOME！</h1>
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="logInText" style="text-align: center;" >ACCOUNT</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter account">
+                  <input type="text" class="form-control" name='acc' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter account">
 
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1" class="logInText mt-3">PASSWORD</label>
-                  <input type="password" class="form-control " id="exampleInputPassword1" placeholder="Enter Password">
+                  <input type="password" class="form-control " name='pw' id="exampleInputPassword1" placeholder="Enter Password">
                 </div>
                 <div class="form-check my-4">
                   <input type="checkbox" class="form-check-input " id="exampleCheck1">
