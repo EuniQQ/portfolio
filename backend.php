@@ -1,11 +1,11 @@
 ﻿<!-- <?php
 include_once "base.php";
 
-// if(!isset($_SESSION['login'])){
-//     to('index.php');  
-//     //如果沒有登入就導回首頁，不能去後台
-// }
-// ?> 
+if(!isset($_SESSION['login'])){
+    to('index.php');  
+    //如果沒有登入就導回首頁，不能去後台
+}
+?> 
 
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

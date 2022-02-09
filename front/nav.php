@@ -20,6 +20,15 @@
               }
               ?>
               
+              <!-- 若有登入則NAV顯示LOGIN改成BACKEND -->
+              <?php
+              
+                if(isset($_SESSION['login'])){
+                    <a href="backend.php"></a>
+                }
+
+              ?>
+
               </ul>
             </div>
           </nav>

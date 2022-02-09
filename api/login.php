@@ -1,9 +1,10 @@
 <?php include_once "../base.php";
-        // math($method,$col,...$arg){}
 
     //debug方式:
     //echo "$Admin->math('count','*',['acc'=>$_POST['acc'],'pw'=>$_POST['pw']])"  
     //exec() 先暫停程式
+
+//function math($method,$col,...$arg){}
 if($Admin->math('count','*',['acc'=>$_POST['acc'],'pw'=>$_POST['pw']])>0){
     
     //如果帳密正確則建立一個session，用來表示登入的狀態
