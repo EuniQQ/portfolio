@@ -135,7 +135,7 @@ input,button
 }
 input:active,button:active
 {
-	background:#E6E6E6;
+	background:#f0f8d1;
 }
 input[type=text],input[type=password]
 {
