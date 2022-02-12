@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  background-color: rgb(160, 149, 143);
-  width: 1920px;
-
+  /* background-color: rgb(160, 149, 143); */ /* 預設版 */
+  /* background-color:rgba(253, 253, 253, 0.994); */
+  /* background-color:rgb(255, 255, 255);  日式版 */
 }
+
 
 main {
   margin: 0;
@@ -11,11 +12,11 @@ main {
   height: auto;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: rgb(253, 242, 235);
+  /* background-color: rgb(253, 242, 235); */ /* 預設版 */
+  background-color: rgb(243, 243, 238); /* 日式版 */
 }
 
 /* nav */
-
 .nav-link {
   font-family: 'Inter', sans-serif;
   color: rgb(73, 68, 0);
@@ -180,7 +181,6 @@ main {
 
 /* 平面設計 */
 .p3Img {
-  /* border:1px solid red; */
   width: 100%;
   height: 100%;
 }
@@ -231,37 +231,10 @@ main {
   font-family: 'Inter', sans-serif;
   letter-spacing: 8px;
   font-weight: bolder;
-
-}
-
-/* 後台 */
-.backendTitle{
-  letter-spacing:8px;
-  font-family: 'Inter', sans-serif;
-  color:white;
-  padding: 30px 0 0 100px;
-}
-
-.backendTitle:hover{
-  text-decoration-line:none;
-}
-
-.backendLogo{
-  z-index:1;
-  position:absolute;
-  padding-top: 20px;
-}
-
-.colorBtn{
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  display: inline-block;
-  margin:5px;
 }
 
 .footer{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  /* background-color:rgb(158, 135, 70); */  /* 預設版 */
+  background-color: rgb(209, 205, 170);   /* 日式版 */
 }
+  

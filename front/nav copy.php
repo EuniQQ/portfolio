@@ -15,28 +15,21 @@
                 foreach($rows as $key =>$value){
               ?>
                 <li class="nav-item">
-                <a class="nav-link mx-3" href="<?=$value['href']?>"><?=$value['name']?></a>
+                  <a class="nav-link mx-3" href="<?=$value['href']?>"><?=$value['name']?></a>
                 </li>
-              
-              <?php
-                }
-            
-                // 登入登出鍵切換
-                if(isset($_SESSION['login'])){
-                
-                echo "<li class='nav-item'>";
-                echo "<a class='nav-link mx-3' href='login.php'>LOG OUT</a>";
-                echo "</li>"; 
-                echo "<button onclick='location.href='backend.php' class='btn btn-warning rounded-pill' style='float-right'>後台管理</button>";
-                   
-                }else{
-                echo "<li class='nav-item'>";
-                echo "<a class='nav-link mx-3' href='login.php'>LOG IN</a>";
-                echo "</li>";  
-                }
-                           
-                ?>
 
+                <!-- 若有登入則NAV顯示LOG IN改成LOG OUT & 新增前往後台的按鈕-->
+                <?php
+                if(isset($_SESSION['login'])){
+                  if($value['name']=='LOG IN'){
+                    $value['name']='LOG OUT'; 
+                    echo "<a href='backend.php'>
+                          <button class='btn btn-warning rounded-pill' style='float-right'>後台管理
+                          </button></a>";
+                      }
+                    }              
+              }
+                ?>
               </ul>
 
               <span class="colorBtn brown " style="background-color:#999900;float-right"></span>

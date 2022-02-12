@@ -16,7 +16,14 @@
   <link rel="stylesheet" href="./login.php">
 </head>
 
-<body style="background-color: rgb(160, 149, 143);">
+
+
+ <?php
+//  $colors=$Color->all();
+//  foreach($colors as $color){  
+?>
+
+<body style="">
   <main class="mx-auto">
         <!--導覽列 nav -->
         <?php include "./front/nav.php"; ?>
@@ -58,13 +65,13 @@
 
     <content class="tab-content">
       
-      <!--page 1 影像課DM -->
+      <!--page 2 影像課DM -->
       <div id="page2" class="container-fruid tab-pane fabe py-5 active" style="background-color: rgb(252, 251, 251);"><br>
         <div class="row" style="justify-content:space-evenly;">
 
         <?=include "front/dm.php"?>
 
-        <!-- p2文字說明 -->
+        <!-- p1 文字說明 -->
         <div id="psImg-3" class="col-lg-3 col-md-4 col-sm-8">
           <i class="fas fa-quote-right fa-5x" mb-2></i>
           <h4 style="letter-spacing: 8px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
@@ -80,12 +87,12 @@
       <?= include "./front/graphic.php" ?>
     </div>
     <!-- </div> -->
-    <!-- page3 end -->
+    <!-- page 3 end -->
 
     </content>
     <!-- top button -->
-    <div class="container">
-      <div class="row">
+    <div class="container" >
+      <div class="row" >
         <a id="top" href="#top" class="col-12 text-center font-weight-bold mt-5"
           style="text-align:center;color:rgb(90, 120, 1)"><i class="arrow fas fa-chevron-circle-up fa-2x"></i></a>
 
@@ -95,12 +102,14 @@
 
 
     <!--頁尾聯絡資訊 bottom -->
-    <footer id="contact" class="row mt-5 pt-5 text-white" style="background-color:rgb(158, 135, 70)">
+    <footer id="contact" class="footer row mt-5 pt-5 text-white">
       <?=include "./front/bottom.php" ?>
     </footer>
     <!-- bottom end -->
 
-
+<?php
+//  }
+?>
     <!-- 燈箱效果 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />

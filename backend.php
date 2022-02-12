@@ -1,4 +1,4 @@
-﻿<!-- <?php
+﻿<?php
 include_once "base.php";
 
 if(!isset($_SESSION['login'])){
@@ -8,8 +8,8 @@ if(!isset($_SESSION['login'])){
 ?> 
 
 <!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0068)?do=admin&redo=title -->
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)?do=admin&redo=title  -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -25,16 +25,15 @@ if(!isset($_SESSION['login'])){
 		.menu-style{
 			color:#000; font-size:13px; text-decoration:none;
 		}
+
         a{
             text-decoration:none;
         }
-        a:hover{
-            text-decoration:underline;
-        }
-
+        
         body{
             background-color:white;
             margin:0;
+            
         }
 	</style>
 </head>
@@ -116,6 +115,7 @@ if(!isset($_SESSION['login'])){
             <div style="clear:both;"></div>
             <div
             class="footer">
+                <!-- 版面顏色選取 -->
                 <span class="colorBtn brown" style="background-color:#999900;"></span>
                 <span class="colorBtn purple" style="background-color:rgb(124, 94, 123);"></span>
                 <span class="colorBtn blue" style="background-color:rgb(74, 126, 161);"></span>

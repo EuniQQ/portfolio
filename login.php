@@ -55,11 +55,12 @@ if(isset($_SESSION['login'])){
                   <label for="exampleInputPassword1" class="logInText mt-3">PASSWORD</label>
                   <input type="password" class="form-control " name='pw' id="exampleInputPassword1" placeholder="Enter Password">
                 </div>
-                <div class="form-check my-4">
+                <!-- <div class="form-check my-4">
                   <input type="checkbox" class="form-check-input " id="exampleCheck1">
                   <label class="form-check-label " for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+                </div> -->
+                <button type="submit" class="btn btn-info mx-auto">Submit</button>
+                <button type="btn" class="btn btn-warning mx-auto"><a href="index.php" class="text-white">Home</a></button>
             </form>
         </div>
     </div>
