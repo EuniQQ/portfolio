@@ -40,12 +40,22 @@
                 ?>
               
                <!-- 風格切換鍵 -->
-               <form action="./api/change_status.php">
-              <button type="submit" id="2" class="themeBtn" 
-                      style="background-color:rgb(255, 247, 0); border-radius:50%;width:40px;height:40px;}">
-              </button>
+               
+            <span>
+              <input type="hidden" name="id" value="2">
+              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php.php'"
+                     style="background-color:rgb(255, 247, 0); border-radius:50%;width:40px;height:40px;}">
+            </span>
 
-              </form>
+            <span>
+              <input type="hidden" name="id" value="1">
+              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php.php'"
+                     style="background-color:rgb(160, 149, 143); border-radius:50%;width:40px;height:40px;}">
+            </span>
+             
+             
+
+    
 
 
 
