@@ -242,6 +242,7 @@ class DB{
     $Intro=new DB('intro');
     $Admin=new DB('admin');
     $Nav=new DB('nav');
+    $Color=new DB('color');
 
 
     //$tt=(isset($_GET['do']))?$_GET['do']:''; (另一種寫法)
@@ -271,6 +272,7 @@ class DB{
         case "nav":
             $DB=$Nav;
         break;
+        
         default:  //default後面不能接參數
             $DB=$Title;
         break;

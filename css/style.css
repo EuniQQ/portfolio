@@ -13,7 +13,7 @@ main {
   box-sizing: border-box;
   overflow: hidden;
   /* background-color: rgb(253, 242, 235); */ /* 預設版 */
-  background-color: rgb(243, 243, 238); /* 日式版 */
+  /* background-color: rgb(243, 243, 238); 日式版 */
 }
 
 /* nav */
@@ -22,6 +22,7 @@ main {
   color: rgb(73, 68, 0);
   letter-spacing: 3px;
 }
+
 
 /* top img */
 .title {
@@ -235,6 +236,13 @@ main {
 
 .footer{
   /* background-color:rgb(158, 135, 70); */  /* 預設版 */
-  background-color: rgb(209, 205, 170);   /* 日式版 */
+  /* background-color: rgb(209, 205, 170);   日式版 */
 }
-  
+
+.colorBtn{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display: inline-block;
+	margin:5px;
+  }

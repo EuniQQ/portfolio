@@ -7,8 +7,18 @@
           <img src="./img/euniQQ.png" ; style="z-index:1;position:absolute;bottom:-200px;right:-40px;width:35%">
 
           <!-- 頁首底圖 -->
-          <img src="./img/<?=$Title->find(['sh'=>1])['img'];?>" style="z-index: 0;width:100%;position:absolute;left:0;">
-          <!-- <div style="z-index:10;"></div> -->
+          <?php
+            $theme=$Color->find(2);
+            if($theme['theme']==1){
+              echo "<img src='./img/03.png' alt='日式版'>";
+            }else{
+          ?>
+           <img src='./img/<?=$Title->find(['sh'=>1])['img'];?>' style='z-index: 0;width:100%;position:absolute;left:0;'>
+
+           <?php
+            }
+          ?>
+
         </div>
       </div>
     </div>

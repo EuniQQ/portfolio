@@ -8,16 +8,18 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ">
               
+            <ul class="navbar-nav ">
+             
               <?php  
               $rows=$Nav->all(['sh'=>1]);
-                foreach($rows as $key =>$value){
+              foreach($rows as $key =>$value){
               ?>
-                <li class="nav-item">
-                <a class="nav-link mx-3" href="<?=$value['href']?>"><?=$value['name']?></a>
-                </li>
               
+              <li class="nav-item">              
+              <a class="nav-link mx-3" href="<?=$value['href']?>"><?=$value['name']?></a>
+              </li>
+                
               <?php
                 }
             
@@ -25,7 +27,7 @@
                 if(isset($_SESSION['login'])){
                 
                 echo "<li class='nav-item'>";
-                echo "<a class='nav-link mx-3' href='login.php'>LOG OUT</a>";
+                echo "<a class='nav-link mx-3' href='./api/logout.php'>LOG OUT</a>";
                 echo "</li>"; 
                 echo "<button onclick='location.href='backend.php' class='btn btn-warning rounded-pill' style='float-right'>後台管理</button>";
                    
@@ -36,10 +38,19 @@
                 }
                            
                 ?>
+              
+               <!-- 風格切換鍵 -->
+               <form action="./api/change_status.php">
+              <button type="submit" id="2" class="themeBtn" 
+                      style="background-color:rgb(255, 247, 0); border-radius:50%;width:40px;height:40px;}">
+              </button>
+
+              </form>
+
+
 
               </ul>
-
-              <span class="colorBtn brown " style="background-color:#999900;float-right"></span>
+              
             </div>
           </nav>
         </div>

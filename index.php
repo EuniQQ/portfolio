@@ -14,19 +14,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./login.php">
+  <style>
+    .themeBtn:focus{
+  background-color:rgb(177, 177, 42);
+}
+  </style>
 </head>
 
-
-
- <?php
-//  $colors=$Color->all();
-//  foreach($colors as $color){  
+<?php
+$colors=$Color->all(['theme'=>1]);
+  foreach($colors as $key => $color){
 ?>
 
-<body style="">
-  <main class="mx-auto">
+ 
+<body style="background-color:<?=$color['body_color']?>;">
+
+
+  <main class="mx-auto" style="background-color:<?=$color['main_color']?>;">
         <!--導覽列 nav -->
         <?php include "./front/nav.php"; ?>
+       
         <!-- nav end -->
 
         <!--頁首圖 top img -->
@@ -90,7 +97,8 @@
     <!-- page 3 end -->
 
     </content>
-    <!-- top button -->
+
+    <!-- back to top button -->
     <div class="container" >
       <div class="row" >
         <a id="top" href="#top" class="col-12 text-center font-weight-bold mt-5"
@@ -102,13 +110,13 @@
 
 
     <!--頁尾聯絡資訊 bottom -->
-    <footer id="contact" class="footer row mt-5 pt-5 text-white">
+    <footer id="contact" class="footer row mt-5 pt-5 text-white" style="background-color:<?=$color['footer_color']?>;">
       <?=include "./front/bottom.php" ?>
     </footer>
     <!-- bottom end -->
 
 <?php
-//  }
+ }
 ?>
     <!-- 燈箱效果 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -160,6 +168,7 @@
 
     </script>
   </main>
+  
 </body>
 
 </html>
