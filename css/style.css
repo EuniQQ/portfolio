@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  /* background-color: rgb(160, 149, 143); */ /* 預設版 */
-  /* background-color:rgba(253, 253, 253, 0.994); */
-  /* background-color:rgb(255, 255, 255);  日式版 */
+
 }
 
 
@@ -12,8 +10,7 @@ main {
   height: auto;
   box-sizing: border-box;
   overflow: hidden;
-  /* background-color: rgb(253, 242, 235); */ /* 預設版 */
-  /* background-color: rgb(243, 243, 238); 日式版 */
+
 }
 
 /* nav */
@@ -24,7 +21,8 @@ main {
 }
 
 
-/* top img */
+
+/* 歡迎語 */
 .title {
   position: relative;
   z-index: 1;
@@ -46,7 +44,6 @@ main {
     left: 900px;
   }
 }
-
 
 
 /* about */
@@ -234,10 +231,6 @@ main {
   font-weight: bolder;
 }
 
-.footer{
-  /* background-color:rgb(158, 135, 70); */  /* 預設版 */
-  /* background-color: rgb(209, 205, 170);   日式版 */
-}
 
 .colorBtn{
 	width:30px;

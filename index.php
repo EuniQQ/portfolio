@@ -76,11 +76,11 @@ $colors=$Color->all(['theme'=>1]);
       <div id="page2" class="container-fruid tab-pane fabe py-5 active" style="background-color: rgb(252, 251, 251);"><br>
         <div class="row" style="justify-content:space-evenly;">
 
-        <?=include "front/dm.php"?>
+        <?php include "front/dm.php"?>
 
         <!-- p1 文字說明 -->
         <div id="psImg-3" class="col-lg-3 col-md-4 col-sm-8">
-          <i class="fas fa-quote-right fa-5x" mb-2></i>
+          <i class="fas fa-quote-left fa-5x" mb-2></i>
           <h4 style="letter-spacing: 8px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
             ，也得以在ADOBE軟體的應用上學習精進<br><i class="fas fa-palette fa-3x float-right"></i></h4>
         </div>
@@ -91,7 +91,7 @@ $colors=$Color->all(['theme'=>1]);
 
     <!-- 以前作品 page 3 -->
     <div id="page3" class="container-gruid tab-pane fabe">
-      <?= include "./front/graphic.php" ?>
+      <?php include "./front/graphic.php" ?>
     </div>
     <!-- </div> -->
     <!-- page 3 end -->

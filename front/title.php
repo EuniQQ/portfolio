@@ -10,11 +10,10 @@
           <?php
             $theme=$Color->find(2);
             if($theme['theme']==1){
-              echo "<img src='./img/top_03.png' alt='日式版'>";
+              echo "<img src='./img/top_03.png' alt='日式版' style='z-index: 0;width:100%;position:absolute;left:0;'>";
             }else{
           ?>
            <img src='./img/<?=$Title->find(['sh'=>1])['img'];?>' style='z-index: 0;width:100%;position:absolute;left:0;'>
-
            <?php
             }
           ?>

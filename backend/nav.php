@@ -1,4 +1,4 @@
-<div style="width:100%; height:100%; ; overflow:auto; ">
+<div style="width:100%; height:100%; overflow:auto; ">
     <p class="t cent"><?=$DB->title;?></p>
     
     <form method="post" action="api/edit.php?do=<?=$DB->table;?>">
