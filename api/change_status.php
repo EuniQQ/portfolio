@@ -3,15 +3,34 @@
 
 
 //從資料庫中取得指定$id的顯示紀錄
-$id=$_POST['id'];
-$show=$Color->find($id);
+$id=$_GET['id'];
 
+if($id==1){   
+    // echo "1111";
+    $show=$Color->find(1);
+    $show['theme']=1;
+    $Color->save($show);
 
-//將紀錄中的顯示欄位(sh)值進行切換，在1(顯示),0(不顯示)之間切換
-$show['theme']=($show+1)%2;
+    $other=$Color->find(2);
+    $other['theme']=0;
+    $Color->save($other);
 
-$Color->save($show['theme']);
+    
+}else{
+    // echo "222";
+    $show=$Color->find(1);
+    $show['theme']=0;
+    $Color->save($show);
 
-to("../backend.php");
+    $other=$Color->find(2);
+    $other['theme']=1;
+    $Color->save($other);
+}   
+    
+// $row=$Color->find(1);
+// $row['theme']=0;
+// echo $Color->save($row);
+
+to("../index.php");
 
 ?> 

@@ -39,19 +39,17 @@
                            
                 ?>
               
-               <!-- 風格切換鍵 -->
-               
-            <span>
-              <input type="hidden" name="id" value="2">
-              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php.php'"
+               <!-- 風格切換鍵 -->                       
+              <!-- <input type="hidden" name="id" value="2"> -->
+              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php?id=2'"
                      style="background-color:rgb(255, 247, 0); border-radius:50%;width:40px;height:40px;}">
-            </span>
+           
 
-            <span>
-              <input type="hidden" name="id" value="1">
-              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php.php'"
+         
+              <!-- <input type="hidden" name="id" value="1"> -->
+              <input type="button" class="themeBtn" onclick="location.href='../api/change_status.php?id=1'"
                      style="background-color:rgb(160, 149, 143); border-radius:50%;width:40px;height:40px;}">
-            </span>
+       
              
              
 

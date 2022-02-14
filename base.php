@@ -106,7 +106,7 @@ class DB{
         }else{
             $sql .= " `id`='$id'"; //意思SELECT * FROM $this->table WHERE 加上 `id`='$id'
         }
-         
+        //  echo $sql;
         return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
     }
 
