@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-02-06 16:14:39
+-- 產生時間： 2022-02-15 14:14:57
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 7.4.23
 
@@ -63,6 +63,28 @@ INSERT INTO `bottom` (`id`, `icon`, `text`, `href`, `sh`) VALUES
 (1, '<i class=\"fas fa-envelope fa-2x\"></i>', 'eunice911qq@gmail.com', '', 1),
 (3, '<i class=\"fab fa-github fa-2x\"></i>', 'https://github.com/EuniQQ', 'https://github.com/EuniQQ', 1),
 (4, '<i class=\"fas fa-lightbulb fa-2x\"></i>', '220.128.133.15/s1100421', '220.128.133.15/s1100421', 1);
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `color`
+--
+
+CREATE TABLE `color` (
+  `id` int(11) NOT NULL,
+  `theme` int(11) NOT NULL,
+  `body_color` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `main_color` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `footer_color` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_nopad_ci;
+
+--
+-- 傾印資料表的資料 `color`
+--
+
+INSERT INTO `color` (`id`, `theme`, `body_color`, `main_color`, `footer_color`) VALUES
+(1, 0, 'rgb(160, 149, 143)', 'rgb(253, 242, 235)', 'rgb(158, 135, 70)'),
+(2, 1, 'rgb(255, 255, 255)', 'rgb(243, 243, 238)', 'rgb(209, 205, 170)');
 
 -- --------------------------------------------------------
 
@@ -167,7 +189,7 @@ INSERT INTO `nav` (`id`, `name`, `href`, `sh`) VALUES
 (2, 'ABOUT', '#aboutMe', 1),
 (3, 'PROTFOLIO', '#frotfolio', 1),
 (4, 'CONTACT', '#contact', 1),
-(5, 'LOG IN', 'login.php', 1);
+(5, 'LOG IN', 'login.php', 0);
 
 -- --------------------------------------------------------
 
@@ -187,7 +209,9 @@ CREATE TABLE `title` (
 --
 
 INSERT INTO `title` (`id`, `img`, `text`, `sh`) VALUES
-(3, 'bg.png', 'bgImg', 1);
+(3, 'bg.png', 'bgImg', 1),
+(4, 'top_02.png', '01', 0),
+(5, 'top_03.png', '03', 0);
 
 -- --------------------------------------------------------
 
@@ -226,6 +250,12 @@ ALTER TABLE `admin`
 -- 資料表索引 `bottom`
 --
 ALTER TABLE `bottom`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- 資料表索引 `color`
+--
+ALTER TABLE `color`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -281,6 +311,12 @@ ALTER TABLE `bottom`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- 使用資料表自動遞增(AUTO_INCREMENT) `color`
+--
+ALTER TABLE `color`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- 使用資料表自動遞增(AUTO_INCREMENT) `dm`
 --
 ALTER TABLE `dm`
@@ -308,7 +344,7 @@ ALTER TABLE `nav`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `title`
 --
 ALTER TABLE `title`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `web`
