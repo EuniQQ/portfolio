@@ -68,21 +68,22 @@ body
 }
 
 .dbor { 
-	/* 左側選單外框 */
+	/* 左側選單 */
 	margin:1px;
 	padding:3px;
 }
-.mainmu {  /* 左側選單 */
+.mainmu {  /* 每一個選單列 */
 	position:relative;
-	line-height:30px;
-	padding:2px 0px 2px 10px;
+	line-height:35px;
+	padding:2px 0px 2px 20px;
 	margin:20px 25px;
-	font-size:medium;
-	
+	font-size:medium;	
 }
 .mainmu:hover
 {
-	background-color: rgb(255, 253, 183);	
+	background-color: rgb(255, 253, 183);
+	margin:0;
+	width:98%;	
 }
 
 .logOutBtn{
@@ -103,7 +104,6 @@ body
 }
 
 #lf{
-/* 左列選單外一層(原含進站人數) */
 	width:20%;  /* 左側選單寬度 */
 	display:inline-block;
 }
@@ -126,7 +126,6 @@ body
 	border:#999 1px solid;
 	width:77.5%;
 	margin:5px 0px;
-	float:left;
 	position:relative;
 	left:20px;
 }

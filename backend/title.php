@@ -54,7 +54,6 @@
                     <td class="cent">
                         <input type="submit" value="修改確定">
                         <input type="reset" value="重置">
-                        <!-- <input type="hidden" name="table" value="<?=$do;?>"> -->
                     </td>
                 </tr>
             </tbody>

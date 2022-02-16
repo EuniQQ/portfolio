@@ -8,7 +8,6 @@
         <tr>
             <td>網頁設計作品縮圖：</td>
             <td><input type="file" name="img"></td> 
-            <!-- name欄位跟資料表是一致的 -->
         </tr>
 
         <tr>
@@ -22,7 +21,6 @@
         </tr>
 
     </table>
-   <!-- 打法:div>input:submit + input>reset -->
     <div><input type="submit" value="新增"><input type="reset" value="重置"></div>
     
 </form>

@@ -53,8 +53,6 @@ foreach ($rows as $key => $value) {
               <td class="cent">
                   <input type="submit" value="修改確定">
                   <input type="reset" value="重置"></td>
-            <!-- 彈出視窗modal(完整op function寫在js.js)  -->
-            <!-- 在bake.php可找到，預設為display-none，所以看不到 -->
             </tr>
         </tbody>
     </table>    

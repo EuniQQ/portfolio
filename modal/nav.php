@@ -14,7 +14,7 @@
             <td><input type="text" name="href"></td>
         </tr>
     </table>
-   <!-- 打法:div>input:submit + input>reset -->
+
     <div><input type="submit" value="新增"><input type="reset" value="重置"></div>
     
 </form>
