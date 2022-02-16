@@ -139,7 +139,7 @@ class DB{
             break;
         }
              //取多筆
-             return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+            return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 
     // function math ---- 用以計算的(甚麼方式，計算甚麼欄位，條件EX男女、年紀...)
