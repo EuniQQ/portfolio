@@ -5,16 +5,16 @@ session_start();
 
 class DB{
     // 本機版
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=protfolio";
-    protected $user="root";
-    protected $pw='';
-    protected $pdo;
+    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=protfolio";
+    // protected $user="root";
+    // protected $pw='';
+    // protected $pdo;
     
     // 遠端版
-    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1100421";
-    // protected $user="s1100421";
-    // protected $pw='s1100421';
-    // protected $pdo;
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1100421";
+    protected $user="s1100421";
+    protected $pw='s1100421';
+    protected $pdo;
     
     //在base.php中的class DB中開放部份成員屬性為公開可讀取
     public $table;  //資料表名稱

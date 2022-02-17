@@ -33,7 +33,7 @@
                 <li class='nav-item'>
                 <a class='nav-link mx-3' href='./api/logout.php'>LOG OUT</a>
                 </li> 
-                <button onclick="location.href='./backend.php'" class='btn btn-warning rounded-pill' style='float-right'>後台管理</button>
+                <button onclick="location.href='./backend.php'" class='btn btn-warning rounded-pill' style='float:right'>後台管理</button>
                 
               <?php   
                 }else{
@@ -46,7 +46,7 @@
               <?php
                 }
               ?>           
-             
+      
 
             <!-- 風格切換鍵 -->                     
             <div style="position:absolute;right:0;">
