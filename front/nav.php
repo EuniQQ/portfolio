@@ -51,11 +51,11 @@
             <!-- 風格切換鍵 -->                     
             <div style="position:absolute;right:0;">
               <!-- 預設 深色底-->
-              <input type="button" class=" btn" onclick="location.href='../api/change_status.php?id=1'"
+              <input type="button" class=" btn" onclick="location.href='api/change_status.php?id=1'"
                 style="background-color:rgb(160, 149, 143); border-radius:50%;width:40px;height:40px;">
               
                 <!-- 淺色底 -->
-              <input type="button" class="themeBtn btn" onclick="location.href='../api/change_status.php?id=2'"
+              <input type="button" class="themeBtn btn" onclick="location.href='api/change_status.php?id=2'"
                 style="background-color:rgb(211, 204, 1); border-radius:50%;width:40px;height:40px;">
                 
             </div>

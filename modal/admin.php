@@ -14,7 +14,7 @@
             <td><input type="password" name="pw"></td>
         </tr>
     </table>
-   <!-- 打法:div>input:submit + input>reset -->
+   <!-- 打法:div>input:submit + input:reset -->
     <div><input type="submit" value="新增"><input type="reset" value="重置"></div>
     
 </form>

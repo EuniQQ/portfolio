@@ -1,7 +1,5 @@
 <?php include_once "../base.php";
 
-
-
 //從資料庫中取得指定$id的顯示紀錄
 $id=$_GET['id'];
 

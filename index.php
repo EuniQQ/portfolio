@@ -68,7 +68,7 @@ $colors=$Color->all(['theme'=>1]);
         </li>
 
       </ul>
-      <!-- Tabs end -->
+  <!-- Tabs end -->
 
     <content class="tab-content">
       
@@ -136,14 +136,14 @@ $colors=$Color->all(['theme'=>1]);
     <script>
 
       $(document).ready(function () {
-        $(".nav-tabs a").click(function () {
-          $(this).tab('show');
-        });
+        // $(".nav-tabs a").click(function () {
+        //   $(this).tab('show');
+        // });
 
-        $(".nav-link").on('click', function () {
-          $('a').removeClass('active');
-          $(this).addClass('active');
-        })
+        // $(".nav-link").on('click', function () {
+        //   $('a').removeClass('active');
+        //   $(this).addClass('active');
+        // })
 
 
         $('.imgDark').on('mouseover', function () {

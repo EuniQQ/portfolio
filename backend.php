@@ -100,7 +100,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                 <?php
 					$do=(isset($_GET['do']))?$_GET['do']:'title';
 					$file="backend/".$do.".php";
-					// 先判斷檔案是否存在
+					// 判斷檔案是否存在
 					if(file_exists($file)){
 						include $file;
 					}else{
@@ -114,21 +114,26 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                 <!-- 版面顏色選取 -->
                 <span class="colorBtn brown" style="background-color:#999900;"></span>
                 <span class="colorBtn purple" style="background-color:rgb(124, 94, 123);"></span>
-                <span class="colorBtn blue" style="background-color:rgb(74, 126, 161);"></span>                               
+                <span class="colorBtn blue" style="background-color:rgb(74, 126, 161);" onclick="reset()"></span>                               
             </div>
         </div>
 
        <script>
-           $(document).ready(function(){
-               $('.brown').click(function(){
+            $(document).ready(function(){
+               
+                $('.brown').click(function(){
                     $('.ti').css('background-color','#999900');  //標題列
                     $('.yel td').css('background-color','#EEE8AA'); //分頁欄位
                     $('.footer').css('background-color','#CCCC99'); //頁尾
                     $('.dbor').css('background-color','	#FFFAFA'); //選單列
-                    });
+                });
 
-                
-           });   
+            });  
+
+        //    function reset(){
+        //    $(".ti,.yel td,.footer,.dbor").remove().css()
+        //    $(".ti,.yel td,.footer,.dbor").css('background-color','#FFFAFA');
+        //    }); 
        </script>
      
 </body>
