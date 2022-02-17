@@ -5,7 +5,7 @@ session_start();
 
 class DB{
     // 本機版
-    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=protfolio";
+    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
     // protected $user="root";
     // protected $pw='';
     // protected $pdo;
