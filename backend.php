@@ -128,6 +128,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                     $('.dbor').css('background-color','	#FFFAFA'); //選單列
                 });
 
+                $('.blue').click(function(){
+                    $('.ti').css('background-color','rgb(74, 126, 161)');  //標題列
+                    $('.yel td').css('background-color','#b2d7e6'); //分頁欄位
+                    $('.footer').css('background-color','rgb(200, 211, 214)'); //頁尾
+                    $('.dbor').css('background-color','	#FFFAFA'); //選單列
+                });
+
             });  
 
         //    function reset(){
