@@ -17,7 +17,7 @@
               </a>
             </div>
             <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-              <h2 class="text-center font-weight-bold ">P H P</h3>
+              <h2 class="text-center font-weight-bold ">P H P<br>AJAX</h3>
             </div>
             <div class="col-md-4 col-sm-0 p-0" style="background-color:rgb(240, 234, 222);">
 
@@ -48,7 +48,7 @@
         <div class="col-md-4 col-sm-12 p-0" style="background-color:#e1e2b5;"></div>
 
         <div class="pfloText col-md-4 col-sm-6 p-0 d-flex align-items-center justify-content-center">
-          <h2 class="text-center font-weight-bold ">BOOSTRAP</h2>
+          <h2 class="text-center font-weight-bold ">BOOSTRAP<br>FIGMA</h2>
         </div>
 
         <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);">
