@@ -7,6 +7,7 @@ body
 	background-color:white;
 }
 
+
 /* 隱形modal */
 #cover 
 {
@@ -37,6 +38,10 @@ body
 	overflow:auto;
 }
 
+a{
+	text-decoration:none;
+}
+
 #main
 {
 	height:100vh;
@@ -54,36 +59,42 @@ body
 	background-color: rgb(74, 126, 161);
 }
 
-.t {  /* 標題字 */
-	font-weight:800;
+/* 左半部 */
+
+.dbor {  /* 左列選單 */
+	width:100%;
+	height:700px;
+	position:relative;
+	padding:5px;
 	display:block;
-	text-align:center;
-	padding:10px 1px 10px 1px;
-	
+	margin-top: 5px;
+	background-color:rgb(230, 230, 230);
 }
 
-.botli { /* 選單頁標題外框 */
+.menuLine { /* 選單標題隔線 */
 	border-bottom:#333 1px solid;
 	padding:20px;
 }
 
-.dbor { 
-	/* 左側選單 */
-	margin:1px;
-	padding:3px;
+.menu-style{
+	color:#000; 
+	font-size:13px; 
+	text-decoration:none;
 }
+
 .mainmu {  /* 每一個選單列 */
 	position:relative;
 	line-height:35px;
-	padding:2px 0px 2px 20px;
-	margin:20px 25px;
+	padding:0px 0px 0px 20px;
+	margin:20px 0px;
 	font-size:medium;	
+	/* border:1px #333 solid; */
 }
 .mainmu:hover
 {
 	background-color: rgb(255, 253, 183);
-	margin:0;
-	width:98%;	
+	padding:0px 0px 0px 20px;
+	margin:20px 0px;
 }
 
 .logOutBtn{
@@ -107,33 +118,44 @@ body
 	width:20%;  /* 左側選單寬度 */
 	display:inline-block;
 }
-#menuput
-/* 左列選單 */
-{
-	width:100%;
-	height:700px;
-	position:relative;
-	padding:5px;
-	display:block;
-	margin-top: 5px;
-	background-color:rgb(230, 230, 230);
-}
+/* 左半部end */
+
+
+/* 右半部 */
 .content
-/* 正中央 */
 {
 	display:inline-block;
 	height:700px;
 	border:#999 1px solid;
 	width:77.5%;
-	margin:5px 0px;
+	margin:5px 0px 0px 20px;
 	position:relative;
-	left:20px;
+}
+
+.t {  /* 管理頁標題字 */
+	font-weight:800;
+	display:block;
+	text-align:center;
+	padding:20px 0;
+}
+
+.yel td /* 後台各分頁欄位 */
+{
+	background:#b2d7e6;
+	text-align:center;
+	padding:10px;
 }
 
 .cent
 {
 	text-align:center;
 }
+
+.trce td
+{
+	text-align:center;
+}
+
 input,button
 {
 	border:rgb(140, 148, 153) 1px solid;
@@ -151,26 +173,30 @@ input[type=text],input[type=password]
 	width:150px;
 }
 
-.yel td /* 後台各分頁欄位 */
-{
-	background:#b2d7e6;
-	text-align:center;
-	padding:10px;
-}
-.trce td
-{
-	text-align:center;
-}
+
+
 
 .footer{
 	width:100%; 
-	left:0px; 
-	position:relative; 
+	position:fixed;
 	background:rgb(200, 211, 214); 
-	margin-top:4px; 
-	height:90px; 
+	height:80px; 
 	display:block;
+	bottom: 0;
+	/* 三個點的定位 */
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
+
+.colorBtn{  /* 三個點(換版面配色) */
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display: inline-block;
+	margin:5px;
+  }
+
 
 /* 後台 */
 .backendTitle{
@@ -189,23 +215,6 @@ input[type=text],input[type=password]
 	position:absolute;
   }
   
-  .colorBtn{
-	width:30px;
-	height:30px;
-	border-radius:50%;
-	display: inline-block;
-	margin:5px;
-  }
+
   
-  .footer{
-	position:fixed;
-	bottom: 0;
-	width: 100%;
-	/* 三個點的定位 */
-	display:flex;
-	justify-content:center;
-	align-items:center;
-
-	
-
-  }
+  

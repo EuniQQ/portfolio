@@ -70,26 +70,28 @@
                     <input type="button" class="sw" value="往上" data-sw="<?=$up;?>">
                     <input type="button" class="sw" value="往下" data-sw="<?=$down;?>">
                 </td>
-        </tr>
+            </tr>
    
-        <?php  } ?>
-   
+            <?php  } ?>
+            
+            </tbody>
        </table>
 
-       <table style="margin-top:40px; width:70%;">
-           <tr>
-               <!-- 新增作品按鈕 -->
-                <td width="200px"><input type="button"                   
-                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$DB->table;?>.php?table=<?=$DB->table;?>&#39;)"
-                value="<?=$DB->button?>">  
-                </td>
-
-                <td class="cent">
-                    <input type="submit" value="修改確定">
-                    <input type="reset" value="重置">
-                </td>
-           </tr>
-       </table>    
+        <table style="margin-top:40px; width:70%;">
+            <tbody>
+                <tr>
+                    <td width="200px">
+                        <input type="button"
+                        onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$DB->table;?>.php?table=<?=$DB->table;?>&#39;)"
+                            value="<?=$DB->button;?>">
+                    </td>
+                    <td class="cent">
+                        <input type="submit" value="修改確定">
+                        <input type="reset" value="重置">
+                    </td>
+                </tr>
+            </tbody>
+        </table>  
 
    </form>
 </div>

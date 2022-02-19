@@ -22,16 +22,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/js.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
-	<style>
-		.menu-style{
-			color:#000; font-size:13px; text-decoration:none;
-		}
-
-        a{
-            text-decoration:none;
-        }
-        
-	</style>
 </head>
 
 <body>
@@ -61,7 +51,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
             <div id="lf" style="float:left;">
                 <div id="menuput" class="dbor" style="position:relative" >
                     <!--主選單-->
-                    <span class="t botli">後台管理選單</span>
+                    <span class="t menuLine">後台管理選單</span>
                     <a class="menu-style" href="?do=nav">
                         <div class="mainmu">導覽列管理 </div>
                     </a>
@@ -114,10 +104,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                 <!-- 版面顏色選取 -->
                 <span class="colorBtn brown" style="background-color:#999900;"></span>
                 <span class="colorBtn purple" style="background-color:rgb(124, 94, 123);"></span>
-                <span class="colorBtn blue" style="background-color:rgb(74, 126, 161);" onclick="reset()"></span>                               
+                <span class="colorBtn blue" style="background-color:rgb(74, 126, 161);"></span>                               
             </div>
         </div>
-
+    </div> 
        <script>
             $(document).ready(function(){
                
@@ -142,7 +132,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
         //    $(".ti,.yel td,.footer,.dbor").css('background-color','#FFFAFA');
         //    }); 
        </script>
-     
+    
 </body>
 
 </html>
