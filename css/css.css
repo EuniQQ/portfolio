@@ -73,7 +73,7 @@ a{
 
 .menuLine { /* 選單標題隔線 */
 	border-bottom:#333 1px solid;
-	padding:20px;
+	margin:20px;
 }
 
 .menu-style{
@@ -85,7 +85,7 @@ a{
 .mainmu {  /* 每一個選單列 */
 	position:relative;
 	line-height:35px;
-	padding:0px 0px 0px 20px;
+	padding:0px 0px 0px 50px;
 	margin:20px 0px;
 	font-size:medium;	
 	/* border:1px #333 solid; */
@@ -93,7 +93,7 @@ a{
 .mainmu:hover
 {
 	background-color: rgb(255, 253, 183);
-	padding:0px 0px 0px 20px;
+	padding:0px 0px 0px 50px;
 	margin:20px 0px;
 }
 
@@ -102,6 +102,9 @@ a{
 	height:85px;
 	display:block;
 	font-size:large;
+	border:1px solid rgb(3, 120, 187) ;
+	color:rgb(3, 120, 187);
+	margin:auto;
 }
 
 .mw{

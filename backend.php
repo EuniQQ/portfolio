@@ -51,7 +51,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
             <div id="lf" style="float:left;">
                 <div id="menuput" class="dbor" style="position:relative" >
                     <!--主選單-->
-                    <span class="t menuLine">後台管理選單</span>
+                    <span class="t menuLine" style="">後台管理選單</span>
                     <a class="menu-style" href="?do=nav">
                         <div class="mainmu">導覽列管理 </div>
                     </a>
@@ -77,7 +77,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                         <div class="mainmu">管理者帳號管理 </div>
                     </a>
                     
-                    <div style="position: fixed;bottom: 90px;width:20%">
+                    <div style="position:fixed ; bottom:90px ; width:20%">
                         <button class="logOutBtn" onclick="location.replace(`../api/logout.php`)">管 理 登 出</button>
                     </div>
                 </div>
