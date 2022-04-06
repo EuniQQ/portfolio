@@ -20,7 +20,12 @@
               <h2 class="text-center font-weight-bold ">P H P<br>AJAX</h3>
             </div>
             <div class="col-md-4 col-sm-0 p-0" style="background-color:rgb(240, 234, 222);">
-
+            <a href="<?=$webs[3]['href']?>">
+                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">
+                  <?=$webs[3]['text']?>
+                </h2>
+                <img src="./img/<?=$webs[3]['img']?>" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176);margin:auto">
+              </a>
 
             </div>
           </div>
