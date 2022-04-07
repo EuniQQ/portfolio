@@ -4,15 +4,14 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:80px;">
         <!-- logo -->
         <img src="./img/logo.png" alt="logo" class="navbar-brand" style="width:5%;">
-        
+        <!-- nav toggle -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="float:right">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-                                                            <!-- 兩顆切換鍵的位置父層 -->
-        <div class="collapse navbar-collapse" id="navbarNav" style="position:relative;">
-          <ul class="navbar-nav " >
 
+        <div class="collapse navbar-collapse" id="navbarNav" style="position:relative;">
+          <ul class="navbar-nav" >
             <?php  
               $rows=$Nav->all(['sh'=>1]);
               foreach($rows as $key =>$value){

@@ -1,7 +1,5 @@
 body {
   margin: 0;
-
-
 }
 
 
@@ -35,8 +33,6 @@ main {
   animation-iteration-count: 3;
 }
 
-
-
 @keyframes mymove {
   from {
     right: -200px;
@@ -47,28 +43,15 @@ main {
   }
 }
 
-/* .title {
-  position: relative;
-  z-index: 1;
-  width:90%;
-  left:270px;
-  bottom: 130px;
-  animation: mymove 3s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 3;
+/* 
+@media (min-width:320px) and (max-width: 720px){ */
+  .topImg{
+  z-index:0;
+  width:100%;
+  position:absolute;
+  left:0;
+  /* top:0; */
 }
-
-
-
-@keyframes mymove {
-  from {
-    left: 500px;
-  }
-
-  to {
-    left: 270px;
-  }
-} */
 
 
 /* about */
