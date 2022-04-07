@@ -1,7 +1,7 @@
     <?php
     $imgs = $Dm->all(['sh' => 1]);
     ?>
-    <div class="d-flex p-5">
+    <div class="d-flex p-5 ml-5">
 
       <!-- 旅遊DM -->
       <div id="psImg-1">

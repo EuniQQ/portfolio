@@ -5,7 +5,7 @@ body {
 
 main {
   margin: 0;
-  width: 70%;
+  width: 80%;
   height: auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -43,14 +43,13 @@ main {
   }
 }
 
-/* 
-@media (min-width:320px) and (max-width: 720px){ */
+
   .topImg{
   z-index:0;
   width:100%;
   position:absolute;
   left:0;
-  /* top:0; */
+  top:0;
 }
 
 
@@ -112,7 +111,7 @@ main {
   animation: rotation 15s infinite linear;
 }
 
-/* protfolio */
+/* portfolio */
 .pfloText {
   font-family: 'Inter', sans-serif;
   color: rgb(146, 80, 80);
@@ -159,7 +158,7 @@ main {
 #psImg-2 {
   border-radius: 45px;
   width: 45%;
-  height: 60%;
+  height: 80%;
   background-color: rgb(214, 231, 255);
   overflow: hidden;
 }
@@ -175,7 +174,7 @@ main {
 #psImg-2 {
   margin-top: 100px;
   background-color: rgb(159, 189, 176);
-  margin-left: -60px;
+  margin-left: -70px;
 }
 
 /* 旅遊DM文字 */

@@ -79,7 +79,7 @@ $colors=$Color->all(['theme'=>1]);
             <?php include "front/dm.php"?>
           </div>
         <!-- 文字說明 -->
-        <div class="col-lg-3 col-md-8 col-sm-12 px-5 pt-5">
+        <div class="col-lg-3 col-md-12 col-sm-12 px-5 pt-5">
           <i class="fas fa-quote-left fa-5x"></i>
           <h4 style="letter-spacing: 10px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
             ，也得以在ADOBE軟體的應用上學習精進<br><i class="fas fa-palette fa-3x float-right"></i></h4>
