@@ -2,7 +2,7 @@
     <content class="container-fruid" id="aboutMe">
       <div class="row">
        
-        <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:150px;">
+        <div class="col-lg-6 col-md-12 col-sm-12" >
 
           <h1 class="aboutTitle mt-5 text-center">ABOUT</h1>
           <h1 class="aboutTitle ml-5 text-center ">// ME //</h1>
@@ -14,9 +14,9 @@
         </div>
 
         <!-- about 右半邊 -->
-        <div class="introduce col-lg-6 col-md-8 col-sm-8 mx-auto" style="position:relative; ">
+        <div class="introduce col-lg-6 col-md-10 col-sm-12 mx-auto" style="position:relative;margin-top:150px;">
           <div class="textArea bg-white px-5 mx-auto">
-            <h4 class="py-5" style="letter-spacing:5px;line-height:40px;z-index:2; ">
+            <h4 class="py-5" style="letter-spacing:4px;line-height:40px;z-index:2; ">
             <?=$Intro->find(1)['text'];?>
               <!-- <strong style="color:teal;font-size:28px">我是筠臻</strong>，求學時於復興美工科、台中科技大學
               商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>

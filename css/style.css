@@ -1,12 +1,13 @@
 body {
   margin: 0;
 
+
 }
 
 
 main {
   margin: 0;
-  width: 65%;
+  width: 70%;
   height: auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -26,23 +27,48 @@ main {
 .title {
   position: relative;
   z-index: 1;
-  right: -400px;
-  bottom: -50px;
-  animation: mymove 2s;
+  width:90%;
+  right:-200px;
+  bottom: 130px;
+  animation: mymove 3s;
   animation-direction: alternate-reverse;
   animation-iteration-count: 3;
 }
 
 
+
 @keyframes mymove {
   from {
-    left: 400px;
+    right: -200px;
   }
 
   to {
-    left: 900px;
+    right: 20px;
   }
 }
+
+/* .title {
+  position: relative;
+  z-index: 1;
+  width:90%;
+  left:270px;
+  bottom: 130px;
+  animation: mymove 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 3;
+}
+
+
+
+@keyframes mymove {
+  from {
+    left: 500px;
+  }
+
+  to {
+    left: 270px;
+  }
+} */
 
 
 /* about */
@@ -83,12 +109,11 @@ main {
 
 /* 右半邊 */
 .introduce {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .textArea {
-  border-radius: 20%;
-  /* height: 500px; */
+  border-radius: 25%;
   width: 80%;
   margin-top: -120px;
   margin-bottom: 50px;
@@ -149,9 +174,9 @@ main {
 /* protfolio-ps */
 #psImg-1,
 #psImg-2 {
-  border-radius: 55px;
-  width: 35%;
-  height: 140%;
+  border-radius: 45px;
+  width: 45%;
+  height: 60%;
   background-color: rgb(214, 231, 255);
   overflow: hidden;
 }
@@ -161,16 +186,19 @@ main {
   transform:scale(1.1);
 }
 
-
+#psImg-1 {
+  margin-left: 50px;
+}
 #psImg-2 {
   margin-top: 100px;
   background-color: rgb(159, 189, 176);
-  margin-left: -200px;
+  margin-left: -60px;
 }
 
+/* 旅遊DM文字 */
 .ps1text {
   position: relative;
-  right: 100px;
+  right: 80px; 
   text-align: end;
 }
 
