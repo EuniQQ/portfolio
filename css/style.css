@@ -1,11 +1,12 @@
 body {
   margin: 0;
+
 }
 
 
 main {
   margin: 0;
-  width: 80%;
+  width: 65%;
   height: auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -19,37 +20,46 @@ main {
   letter-spacing: 3px;
 }
 
-
-
-/* 歡迎語 */
-.title {
-  position: relative;
-  z-index: 1;
-  width:90%;
-  right:-200px;
-  bottom: 130px;
-  animation: mymove 3s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: 3;
-}
-
-@keyframes mymove {
-  from {
-    right: -200px;
-  }
-
-  to {
-    right: 20px;
-  }
-}
-
-
-  .topImg{
+/* 首頁兩種底圖 */
+.pic{
   z-index:0;
   width:100%;
   position:absolute;
   left:0;
   top:0;
+}
+
+/* 歡迎語動畫 */
+/* .bigTitle {
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 3;
+  animation: mymove 2s  
+} */
+
+
+/* @keyframes mymove {
+  from {
+    left: 400px;
+  }
+
+  to {
+    left: 900px;
+  }
+} */
+
+/* 小臻臻人像 */
+.euniQQ{
+  z-index:1;
+  position:absolute;
+  bottom:-200px;
+  right:-40px;
+  width:35%;
+}
+
+@media screen and (max-width:720px){
+  .euniQQ{
+    display:none;
+  }
 }
 
 
@@ -91,11 +101,12 @@ main {
 
 /* 右半邊 */
 .introduce {
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 .textArea {
-  border-radius: 25%;
+  border-radius: 20%;
+  /* height: 500px; */
   width: 80%;
   margin-top: -120px;
   margin-bottom: 50px;
@@ -111,7 +122,7 @@ main {
   animation: rotation 15s infinite linear;
 }
 
-/* portfolio */
+/* protfolio */
 .pfloText {
   font-family: 'Inter', sans-serif;
   color: rgb(146, 80, 80);
@@ -156,9 +167,9 @@ main {
 /* protfolio-ps */
 #psImg-1,
 #psImg-2 {
-  border-radius: 45px;
-  width: 45%;
-  height: 80%;
+  border-radius: 55px;
+  width: 35%;
+  height: 140%;
   background-color: rgb(214, 231, 255);
   overflow: hidden;
 }
@@ -168,19 +179,16 @@ main {
   transform:scale(1.1);
 }
 
-#psImg-1 {
-  margin-left: 50px;
-}
+
 #psImg-2 {
   margin-top: 100px;
   background-color: rgb(159, 189, 176);
-  margin-left: -70px;
+  margin-left: -200px;
 }
 
-/* 旅遊DM文字 */
 .ps1text {
   position: relative;
-  right: 80px; 
+  right: 100px;
   text-align: end;
 }
 
@@ -240,7 +248,7 @@ main {
 }
 
 
-.colorBtn{
+.themeBtn{
 	width:30px;
 	height:30px;
 	border-radius:50%;

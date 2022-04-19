@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="./login.php">
   <style>
     .themeBtn:focus{
-  background-color:rgb(177, 177, 42);
-}
+      background-color:rgb(177, 177, 42);
+    }
   </style>
 </head>
 
@@ -26,14 +26,14 @@ $colors=$Color->all(['theme'=>1]);
   foreach($colors as $key => $color){
 ?>
 
- 
+
 <body style="background-color:<?=$color['body_color']?>;">
 
 
   <main class="mx-auto" style="background-color:<?=$color['main_color']?>;">
         <!--導覽列 nav -->
         <?php include "./front/nav.php"; ?>
-       
+
         <!-- nav end -->
 
         <!--頁首圖 top img -->
@@ -74,14 +74,14 @@ $colors=$Color->all(['theme'=>1]);
       
       <!--page 2 影像課DM -->
       <div id="page2" class="container-fruid tab-pane fabe py-5 active" style="background-color: rgb(252, 251, 251);"><br>
-        <div class="row">
-          <div class="col-lg-8 col-md-12 col-sm-12 px-auto">
-            <?php include "front/dm.php"?>
-          </div>
-        <!-- 文字說明 -->
-        <div class="col-lg-3 col-md-12 col-sm-12 px-5 pt-5">
-          <i class="fas fa-quote-left fa-5x"></i>
-          <h4 style="letter-spacing: 10px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
+        <div class="row" style="justify-content:space-evenly;">
+
+        <?php include "front/dm.php"?>
+
+        <!-- p1 文字說明 -->
+        <div id="psImg-3" class="col-lg-3 col-md-4 col-sm-8">
+          <i class="fas fa-quote-left fa-5x" mb-2></i>
+          <h4 style="letter-spacing: 8px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
             ，也得以在ADOBE軟體的應用上學習精進<br><i class="fas fa-palette fa-3x float-right"></i></h4>
         </div>
       </div>
