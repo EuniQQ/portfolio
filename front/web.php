@@ -57,7 +57,7 @@
           <h3 class="tt text-center font-weight-bold ">BOOSTRAP<br>FIGMA</h3>
         </div>
 
-        <div onclick="" class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);" >
+        <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);" >
           <a href="javascript:window.open('<?=$webs[2]['href']?>','newPage')">
             <h3 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;"><?=$webs[2]['text']?></h3>
             <img src="./img/<?=$webs[2]['img']?>" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
