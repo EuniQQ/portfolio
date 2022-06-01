@@ -156,8 +156,17 @@ $colors=$Color->all(['theme'=>1]);
           $(this).siblings('.imgTitle').removeClass('d-1');
         })
 
+
+        function openPage(url){
+        window.open(url,win2,scrollbars=yes);
+      }
+
+
+
       });
 
+
+      
 
 
 

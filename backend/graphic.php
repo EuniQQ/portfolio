@@ -17,7 +17,7 @@
 
 
         <?php
-           
+
             $rows=$DB->all(" ORDER by `rank`");
             // dd($rows);
             foreach($rows as $key => $row){
@@ -41,29 +41,29 @@
         ?>
 
 
-           
+                
             <tr>
                 <td >
-                   <img src="./img/<?=$row['img_sm'];?>" style="width:120px;height:80px">
+                    <img src="./img/<?=$row['img_sm'];?>" style="width:120px;height:80px">
                 </td>
                 <td >
-                   <img src="./img/<?=$row['img'];?>" style="width:180px;height:120px">
+                    <img src="./img/<?=$row['img'];?>" style="width:180px;height:120px">
                 </td>
                 <td>
-                   <input type="text" name="text[]" value="<?=$row['text'];?>">
+                    <input type="text" name="text[]" value="<?=$row['text'];?>">
                 </td>
                 <td>
-                   <input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=$checked;?>>
+                    <input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=$checked;?>>
                 </td>
                 <td>
-                   <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
+                    <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
                 </td>
 
                 <td>
                     <input type="hidden" name="id[]" value="<?=$row['id'];?>">
                         <!-- 更新圖片按鈕 -->
                         <input type="button"
-                        onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/upload.php?do=<?=$DB->table;?>&id=<?=$row['id'];?>&#39;)" 
+                        onclick="op('#cover','#cvr','modal/upload.php?do=<?=$DB->table;?>&id=<?=$row['id'];?>')" 
                         value="<?=$DB->upload?>">
                 </td>
                 <td>
@@ -71,7 +71,7 @@
                     <input type="button" class="sw" value="往下" data-sw="<?=$down;?>">
                 </td>
             </tr>
-   
+                
             <?php  } ?>
             
             </tbody>

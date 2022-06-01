@@ -15,32 +15,32 @@
                 </tr>
                 
         <?php
-           $rows=$DB->all();
-           foreach($rows as $row){  
+            $rows=$DB->all();
+            foreach($rows as $row){  
             $checked=($row['sh']==1)?'checked':'';
-       ?>
+        ?>
 
-           
+            
 
-           <tr>
+            <tr>
                 <td >
-                  <img src="./img/<?=$row['img'];?>" style="width:150px;height:130px">
+                    <img src="./img/<?=$row['img'];?>" style="width:150px;height:130px">
                 </td>
 
                 <td>
-                   <input type="text" name="text[]" value="<?=$row['text']; ?>" style="width:70%">
-                </td>
-               
-                <td>
-                   <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:80%">
-                </td>
-                               
-                <td>
-                   <input type="checkbox" name="sh[]" value="<?=$row['sh'];?>"<?=$checked;?>>
+                    <input type="text" name="text[]" value="<?=$row['text']; ?>" style="width:70%">
                 </td>
 
                 <td>
-                   <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
+                    <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:80%">
+                </td>
+
+                <td>
+                    <input type="checkbox" name="sh[]" value="<?=$row['sh'];?>" <?=$checked;?>>
+                </td>
+
+                <td>
+                    <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
                 </td>
                 
                 <td>
@@ -51,12 +51,12 @@
                     value="更新圖片">
                 </td>
             </tr>
-   
+                
                 <?php  } ?>
             </tbody>
         </table>
 
-       <table style="margin-top:40px; width:70%;">
+        <table style="margin-top:40px; width:70%;">
             <tbody>
                 <tr>
                     <td width="200px">
@@ -72,5 +72,5 @@
             </tbody>
         </table>  
 
-   </form>
+    </form>
 </div>
